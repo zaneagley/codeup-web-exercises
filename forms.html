@@ -3,30 +3,7 @@
     <head>
         <meta charset="utf=8">
         <title>Register With Us</title>
-        <style>
-            li {
-                list-style-type: none;
-            }
-            section {
-                align: center;
-            }
-
-            label {
-                vertical-align: top;
-            }
-
-            h1 {
-                font-family: Verdana;
-                font-style: oblique;
-                color: cornflowerblue;
-            }
-
-            html, body {
-                height: 100%;
-                background: linear-gradient(to bottom, whitesmoke, teal);
-            }
-
-        </style>
+        <link rel="stylesheet" href="css/forms-style.css">
     </head>
     <body>
         <header>
@@ -36,7 +13,6 @@
         <main>
             <section>
                 <form id="registration" method="POST" action="https://webhook.site/e4784fbb-83c0-47e1-87c1-fe599be4a728">
-
                     <ul>
                         <label for="Email">Email</label>
                         <li><input id="Email" type="text" name="Email" placeholder="Email"> </li>
@@ -49,8 +25,8 @@
                     <ul>
                         <h4>How did you hear of us?</h4>
                         <li><input type="radio" name="hearofus" value="Billboard">Billboard</li>
-                        <li><input type="radio" name="hearofus" value="radio advertisement">Radio Advertisement</li>
-                        <li><input type="radio" name="hearofus" value="internet advertisement">Internet Advertisement</li>
+                        <li><input type="radio" name="hearofus" value="radio-advertisement">Radio Advertisement</li>
+                        <li><input type="radio" name="hearofus" value="internet-advertisement">Internet Advertisement</li>
                         <li><input type="radio" name="hearofus" value="Other">Other</li>
                     </ul>
                     <label for="browser">What browser are you using?</label>
