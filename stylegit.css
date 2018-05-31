@@ -1,0 +1,89 @@
+/* Navigation bar */
+.top-background {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding: 12px;
+}
+
+
+/* Sets the links in navigation bar to be white and have no underline */
+.White-Link {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+/* Removes the underline for footer hyperlinks */
+.Footer-Link {
+    text-decoration:none;
+}
+
+/* Sets the list to be displayed horizontally and gives room between */
+ul#menu li {
+    display:inline;
+    margin: 15px;
+}
+/* Image in top left corner */
+#trademarkimg {
+    margin: 10px;
+}
+/* Grants room for content below the navigation bar */
+#below-nav {
+    margin-top: 20px;
+    align: left;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#footer-right{
+    align:right;
+    float: right;
+    text-decoration:none;
+}
+
+.peopletab{
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color:#F0F0F0;
+    width: 100%;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Github - Codeup</title>
+        <link rel="stylesheet" href="stylegit.css">
+
+
+
+    </head>
+    <body>
+    <div class="top-background">
+        <img id="trademarkimg" src="http://placeholder.pics/svg/30x30/DEDEDE/555555/http%3A%2F%2Fplaceholder.pics%2Fsvg%2F30" alt="placeholder" align="left" >
+        <ul id="menu">
+            <li><a class="White-Link" href="#Pull Requests">Pull Requests</a></li>
+            <li><a class="White-Link" href="#Issues">Issues</a></li>
+            <li><a class="White-Link" href="#Marketplace">Marketplace</a></li>
+            <li><a class="White-Link" href="#Explore">Explore</a></li>
+        </ul>
+    </div>
+
+    <div >
+        <h2><img id="below-nav" src="http://placeholder.pics/svg/48x48/DEDEDE/555555/http%3A%2F%2Fplaceholder.pics%2Fsvg%2F30">
+        Codeup</h2>
+    </div>
+
+    <div>
+        <br>
+        <br>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Repositories')">Repositories</button>
+            <button class="tablinks" onclick="openCity(event, 'People')">People</button>
+            <button class="tablinks" onclick="openCity(event, 'Teams')">Teams</button>
+            <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
+        </div>
+
+        <div id="Repositories" class="tabcontent">
+            <h3>Repositories</h3>
+            <p>Repositories</p>
+        </div>
+
+        <div id="People" class="tabcontent">
+            <h3 class="peopletab">Codeup's Dev Team</h3>
+            <table width="100%"; height:"100%";>
+                <tr>
+                    <th align="left" width="70%">Kent Beck</th>
+                </tr>
+                <tr>
+                    <td><img src="http://placeholder.pics/svg/30x30/DEDEDE/555555/http%3A%2F%2Fplaceholder.pics%2Fsvg%2F30"> </td>
+                    <td align="right">Member</td>
+                    <td align="right">1 Team</td>
+                </tr>
+                <tr>
+                    <th align="left">Codeup Instruction Staff</th>
+                </tr>
+                <tr>
+                    <td><img src="http://placeholder.pics/svg/30x30/DEDEDE/555555/http%3A%2F%2Fplaceholder.pics%2Fsvg%2F30"></td>
+                    <td align="right">Member</td>
+                    <td align="right">1 Team</td>
+                </tr>
+                <tr>
+                    <th align="left">Martin Fowler</th>
+                </tr>
+                <tr>
+                    <td><img src="http://placeholder.pics/svg/30x30/DEDEDE/555555/http%3A%2F%2Fplaceholder.pics%2Fsvg%2F30"> </td>
+                    <td align="right">Member</td>
+                    <td align="right">0 Teams</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="Teams" class="tabcontent">
+            <h3>Teams</h3>
+            <p>Teams Tab</p>
+        </div>
+        <div id="Projects" class="tabcontent">
+            <h3>Projects</h3>
+            <p>Projects Tab</p>
+        </div>
+        <div id="Settings" class="tabcontent">
+            <h3>Settings</h3>
+            <p>Settings Tab</p>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div>
+        <span id="footer-left">© 2018 Github, Inc &nbsp;<a class="Footer-Link" href="#Terms">Terms</a>&nbsp; <a class="Footer-Link" href="#Privacy">Privacy</a>&nbsp; <a class="Footer-Link" href="#Security">Security</a>&nbsp; <a class="Footer-Link" href="#Status">Status</a>&nbsp; <a class="Footer-Link" href="#Help">Help</a></span> <span id="footer-right"><a class="Footer-Link" href="#ContactGithub">Contact Github</a>&nbsp; <a class="Footer-Link" href="#API">API</a>&nbsp; <a class="Footer-Link" href="#Training">Training</a>&nbsp; <a class="Footer-Link" href="#Shop">Shop</a>&nbsp; <a class="Footer-Link" href="#Blog">Blog</a>&nbsp; <a class="Footer-Link" href="#About">About</a></span>
+    </div>
+
+    </body>
+</html>

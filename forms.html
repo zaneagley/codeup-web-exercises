@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Register With Us</title>
+        <style>
+            li {
+                list-style-type: none;
+            }
+            section {
+                align: center;
+            }
+
+            label {
+                vertical-align: top;
+            }
+
+            h1 {
+                font-family: Verdana;
+                font-style: oblique;
+                color: cornflowerblue;
+            }
+
+            html, body {
+                height: 100%;
+                background: linear-gradient(to bottom, whitesmoke, teal);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Veridian Dynamics</h1>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <form id="registration" method="POST" action="https://webhook.site/e4784fbb-83c0-47e1-87c1-fe599be4a728">
+
+                    <ul>
+                        <label for="Email">Email</label>
+                        <li><input id="Email" type="text" name="Email" placeholder="Email"> </li>
+                        <label for="Password">Password</label>
+                        <li><input id="Password" type="password" name="Password" placeholder="Password"> </li>
+                    </ul>
+                   <label for="Bio">Bio:</label>
+                    <textarea id="Bio" name="Bio" rows="4" cols="40" placeholder="Tell us about yourself."></textarea>
+                    <br>
+                    <ul>
+                        <h4>How did you hear of us?</h4>
+                        <li><input type="radio" name="hearofus" value="Billboard">Billboard</li>
+                        <li><input type="radio" name="hearofus" value="radio advertisement">Radio Advertisement</li>
+                        <li><input type="radio" name="hearofus" value="internet advertisement">Internet Advertisement</li>
+                        <li><input type="radio" name="hearofus" value="Other">Other</li>
+                    </ul>
+                    <label for="browser">What browser are you using?</label>
+                    <select id="browser" name="browserusing">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Internet Exploer">Internet Explorer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit">
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <hr>
+        </footer>
+    </body>
+</html>
