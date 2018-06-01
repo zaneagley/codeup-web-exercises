@@ -4,7 +4,92 @@ line
 comment
 */
 
+html {
+    background: linear-gradient(to bottom, ghostwhite, mediumpurple);
+
+}
+
+body {
+    background-image: url("https://m.popkey.co/987552/NGLb3.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Verdana, Times, serif;
+    font-variant: small-caps;
+}
+
+
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+table {
+  /* border: black 2px solid;
+    border-radius: 4px; */
+    border-collapse: collapse;
+}
+
+th {
+    border: black 1px solid;
+    font-style: italic;
+}
+
+td {
+    border: black 1px solid;
+    font-family: AppleGothic, Times, serif;
+    padding: 7px;
+    text-align: right;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    font-size: 120%;
+}
+
+a:active {
+    color: cyan;
+}
+
+
+
 .fancy-header {
-    color: purple; /* single line comment */
+    color: purple;
     text-decoration: underline;
+    font-family: "Helvetica Neue", Times, serif;
+}
+
+.tecnologyspecial {
+    font-size: 18px;
+    text-shadow: black -1px 1px 20px;
+    text-space: 1px;
+}
+
+.images {
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.images>img:hover {
+    width: 35%;
+    height: 35%;
+}
+
+.visionlist {
+  list-style-type: lower-greek;
+
+}
+
+#top {
+    text-align: center;
 }
