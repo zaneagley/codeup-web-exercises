@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/streetartist.css">
     <title>Street Artist</title>
 </head>
@@ -9,10 +10,37 @@
     <header>
         <nav class="top-nav">
             <ul class="nav">
-                <li class="nav-item">My Art</li>
-                <li class="nav-item" id="about">About</li>
+                <li class="nav-item">MY ART</li>
+                <a href="#about"><li class="nav-item2">About</li></a>
             </ul>
         </nav>
     </header>
+    <main class="art">
+        <section class="images">
+            <img class="leftimgs" src="images/streetart.jpg">
+            <img class="leftimgs" src="images/streetart2.jpg">
+            <img class="leftimgs" src="images/streetart3.jpg">
+            <img class="leftimgs" src="images/streetart4.jpg">
+            <img class="leftimgs" src="images/streetart5.jpg">
+        </section>
+    </main>
+    <section class="aboutsection">
+        <h1 id="about">About</h1>
+        <img src="images/boy.jpg">
+        <p>Just me, myself and I, exploring the iniverse of unknownment.  I have a heart of love and an interest of lorem ipsum and muris neque quam blog. I want to share my world with you. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <h3>Do not hesitate to contact me!</h3>
+        <form method="post" action="">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="name" name="name">
+            <label for="email">Email</label>
+            <input id="email" type="text" class="email" name="email">
+            <label for="message">Message</label>
+            <input id="message" type="text" class="message" name="message">
+            <button>Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>Powered by -------</p>
+    </footer>
 </body>
 </html>
