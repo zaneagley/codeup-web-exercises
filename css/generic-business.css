@@ -59,27 +59,48 @@ footer {
     height: 400px;
     padding-top: 100px;
     position: center;
-    text-align: center;
+    text-align: left;
+    margin: 0px 60px;
   }
 
-.section2 img {
+.section2 h4 {
+    padding-bottom: 20px;
+}
+
+.section2 img{
     float: right;
     height: 100px;
     width: 100px;
+    margin: 0px 75px;
+    padding-bottom: 75px;
+
 }
+
+
 
 .section3 {
     background-color: #dddddd;
     height: 400px;
     padding-top: 100px;
     position: center;
-    text-align: center;
+    text-align: left;
   }
+
+.section3 h2 {
+    margin: 0px 198px;
+}
+
+.section3 p {
+    margin: 0px 35px;
+}
 
 .section3 img {
     height: 100px;
     width: 100px;
     float:left;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    margin: 0px 50px;
 }
 
 .quote {
