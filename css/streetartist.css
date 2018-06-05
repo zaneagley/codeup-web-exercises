@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    height: 1600px;
     font-family: Raleway, sans-serif;
     background-color: #dddddd;
 }
@@ -9,8 +8,9 @@ body {
 button {
     background-color: darkslategray;
     color: white;
-    width: 100%;
+    width: 95%;
     padding: 1em;
+    margin-right: 10px;
 }
 
 input, label {
@@ -44,6 +44,7 @@ footer {
     overflow: hidden;
     padding: 20px;
     width: 94%;
+    display: inline-block;
 }
 
 .nav-item {
@@ -53,49 +54,23 @@ footer {
 .nav-item2 {
     float: right;
     text-decoration: none;
+    color: black;
 }
 
 .art {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
-.images {
 
-}
 
 .leftimgs {
-    vertical-align: middle;
-    height: auto;
     width: 100%;
     padding: 0;
     margin: 0;
 }
-/*
-.rightimgs {
-    float: right;
-    width: 50%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-*/
-@media only screen and (max-width: 700px) {
-    .art {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .art {
-        width: 100%;
-    }
-}
 
 .aboutsection {
     margin: auto;
-    width: 50%;
     text-align: center;
     clear: both;
 }
@@ -107,18 +82,19 @@ footer {
 
 .aboutsection img {
     align-content: center;
-    width: 50%;
+    width: 75%;
     margin-top: 7em;
 }
 
-.aboutsection p {
-    margin: 1em 3em;
-}
+
 
 .aboutsection h3 {
     color: red;
 }
 
+.aboutsection p {
+    margin: 1em;
+}
 
 /*
 .clearfix {
@@ -130,7 +106,7 @@ footer {
 
 #name {
     width: 95%;
-    margin-bottom: 1em;
+    margin: 0.5em;
     padding: 1em;
 }
 
@@ -140,12 +116,69 @@ footer {
 
 #email {
     width: 95%;
-    margin-bottom: 1em;
+    margin: 0.5em;
     padding: 1em;
 }
 
 #message {
     width: 95%;
-    margin-bottom: 1em;
+    margin: 0.5em;
     padding: 1em;
+}
+
+@media screen and (min-width:992px) {
+
+
+    .images {
+        height: 75em;
+    }
+
+    .leftimgs {
+        height: 400px;
+    }
+
+    .longimg {
+        height: 800px;
+        position: relative;
+    }
+
+    .imgup {
+        top: -400px;
+    }
+
+    .aboutsection {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        clear: both;
+    }
+
+    .aboutsection img {
+        width: 50%;
+    }
+
+    .aboutsection p {
+        margin: 1em 3em;
+    }
+
+    #name {
+        width: 95%;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+
+    #email {
+        width: 95%;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+    #message {
+        width: 95%;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+
 }
