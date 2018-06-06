@@ -1,0 +1,134 @@
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main {
+    margin: 10px;
+}
+
+h1 {
+    background-color: white;
+    opacity: 0.6;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    text-shadow: black -1px 1px 7px;
+}
+
+.topnav {
+    background-color: rgb(246, 246, 246);
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.topnav a:hover {
+    background-color: #dddddd;
+    height: 100%;
+}
+
+.bg-color-lb {
+    background-color: rgb(209, 232, 246);
+    opacity: 0.8;
+    color: rgb(71, 122, 151);
+}
+
+.signup {
+    height: 30px;
+    width: 30px;
+}
+
+.signupbutton {
+    border: none;
+    padding-right: 10px;
+}
+
+.searchbar {
+    margin-right: 250px;
+}
+
+.jumbotron {
+    margin-top: 40px;
+    background-image: url("http://java.codeup.com/examples/bootstrap/pizza.png");
+    width: 100%;
+}
+
+
+.bgpizza {
+    padding: 0;
+    margin: 0;
+}
+
+
+.btn-pizza-tab {
+    background-color: #FFFFFF;
+    border: none;
+    border-bottom: none;
+    border-radius: 0;
+    color: rgb(82, 127, 172);
+}
+
+.btn-pizza-tab:active {
+    background-color: #0fb784;
+}
+
+.cardmargin {
+    margin-bottom: 30px;
+}
+
+
+.formpad {
+    padding: 0;
+}
+
+.btn-pizza-tab.active.show {
+    background-color: #FFFFFF;
+    border: 1px solid black ;
+}
+
+
+.labeltoppings {
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+.toppings {
+    border-top: 1px solid lightgray;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+.toppinglist {
+    list-style-type: none;
+}
+
+ul.toppinglist li {
+    border-top: 1px solid lightgray;
+    padding: 10px;
+}
+
+.lightblueborder {
+    border: 1px solid lightblue;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+{
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+    border-bottom: none;
+}
