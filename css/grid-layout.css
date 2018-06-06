@@ -51,13 +51,16 @@
 
 
 
+/* original max-width:768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .column.one-third,
     .column.one-half,
-    .one-sixth,
-    .one-eighth,
-    .one-fourth{
+    .column.one-sixth,
+    .column.one-eighth,
+    .column.one-fourth,
+    .column.three-fourth,
+    .column.two-third{
         width: 100%;
     }
 }
