@@ -33,8 +33,16 @@
     width: calc(12.5% - 10px);
 }
 
+.two-third {
+    width: calc(66.66% - 10px);
+}
+
 .three-fourth {
     width: 75%;
+}
+
+.fullcol {
+    width: calc(100% - 20px)
 }
 
 

@@ -1,6 +1,6 @@
 
 body {
-
+ margin: 10px;
 }
 
 .alert-info a {
@@ -104,7 +104,7 @@ footer p {
 
 
     body {
-        margin: 0px 15px;
+        margin: 0 15px;
     }
 
     h1 {
@@ -149,12 +149,16 @@ footer p {
         display: inline-block;
         float: left;
         margin-right: 15px;
+        position: relative;
+        left: 10px;
     }
 
     .sub-section {
         font-style: italic;
         /*width: 25%;*/
         display: inline-block;
+        position: relative;
+        left: 175px;
     }
 
     footer {
@@ -171,7 +175,7 @@ footer p {
 
     #social-media-links {
         float: right;
-        margin-top: 85px;
+        margin-top: 230px;
     }
 
 }
