@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0 4em;
+    background-color: #dddddd;
+}
+
+main {
+    background-color: white;
+    height: 1000px;
+    width: 100%;
+}
+
+
+
+/*   Column and Row section for Grid Layout */
+
+
+.row    {
+    width:100%;
+}
+
+.column {
+    float: left;
+    /* border: 1px solid black;
+    background-color: #dddddd; */
+}
+
+.one-half {
+    width: calc(50% - 10px);
+}
+
+.one-third {
+    width: calc(33.33%  - 10px);
+}
+
+.one-fourth {
+    width: calc(25% - 10px);
+}
+
+.one-sixth {
+    width: calc(16.66% - 10px);
+}
+
+.one-eighth {
+    width: calc(12.5% - 10px);
+}
+
+.two-third {
+    width: calc(66.66% - 10px);
+}
+
+.three-fourth {
+    width: 75%;
+}
+
+.fullcol {
+    width: calc(100% - 20px)
+}
+
+
+/* Main Styling Section */
+
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+}
+
+
+.nav {
+    background-color: black;
+    height: 100vh;
+}
+
+.logo {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.directory {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 130px
+}
+
+.directory li {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.aboutpage {
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .column.one-third,
+    .column.one-half,
+    .column.one-sixth,
+    .column.one-eighth,
+    .column.one-fourth,
+    .column.three-fourth,
+    .column.two-third {
+        width: 100%;
+    }
+    html,
+    body {
+        margin: 0;
+    }
+}
