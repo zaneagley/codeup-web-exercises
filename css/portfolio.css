@@ -18,6 +18,13 @@ main {
     width: 100%;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    vertical-align: middle;
+}
+
 
 
 /*   Column and Row section for Grid Layout */
@@ -34,7 +41,7 @@ main {
 }
 
 .one-half {
-    width: calc(50% - 10px);
+    width: 50%;
 }
 
 .one-third {
@@ -74,16 +81,6 @@ li a {
     color: white;
 }
 
-td, th {
-    padding: 10px;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background-color: blue;
-}
-
-
 .nav {
     background-color: black;
     height: 100vh;
@@ -110,10 +107,94 @@ tr:nth-child(even) {
 }
 
 .aboutpage {
+    background-color: rgb(81, 102, 116);
+    text-align: center;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
 
+.aboutpics {
+    width: 40%;
+    margin: 50px 0;
+}
+
+.aboutpage p {
+    margin: auto;
+    text-align: left;
+    padding: 0 30px;
+    margin-bottom: 10px;
 }
 
 
+.mywork {
+    justify-content: center;
+    background-color: rgb(234, 234, 234);
+    height: 100vh;
+}
+
+
+.mywork h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mywork h4 {
+    text-align: center;
+}
+
+.workpics {
+    margin: 0;
+    width: 100%;
+}
+
+.resume {
+    background-color: rgb(50, 61, 160);
+    height: 100vh;
+}
+
+.resume h4 {
+    color: white;
+    text-align: center;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    border: 0;
+}
+
+tr:nth-child(odd) {
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.swingby {
+    background-color: rgb(74, 74, 74);
+    height: 100vh;
+}
+
+.swingby h1 {
+    margin-bottom: 200px;
+}
+
+.swingby p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.contact {
+    background-color: rgb(53, 131, 117);
+    height: 100vh;
+}
+
+.contact h1 {
+    text-align: left;
+    padding-left: 10px;
+}
 
 
 @media screen and (max-width: 600px) {
