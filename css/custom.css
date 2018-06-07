@@ -24,7 +24,7 @@ h1 {
 .topnav {
     background-color: rgb(246, 246, 246);
     border: 1px solid lightgrey;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 0;
 }
 
@@ -32,6 +32,16 @@ h1 {
     background-color: #dddddd;
     height: 100%;
 }
+
+.navbar-brand {
+    padding: 17px;
+}
+
+.nav-link {
+    padding: 20px;
+}
+
+
 
 .bg-color-lb {
     background-color: rgb(209, 232, 246);
@@ -47,10 +57,16 @@ h1 {
 .signupbutton {
     border: none;
     padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 45%;
 }
 
+
+
+
 .searchbar {
-    margin-right: 250px;
+    margin-left: 20px;
+    justify-content: center;
 }
 
 .jumbotron {
@@ -125,10 +141,31 @@ ul.toppinglist li {
     border: 1px solid lightblue;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
-{
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     background-color: #FFFFFF;
     color: black;
     border: 1px solid black;
     border-bottom: none;
+}
+
+a {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+
+    .searchbar {
+        margin-left: 20px;
+        margin-right: auto!important;
+    }
+
+    .signupbutton {
+        margin: 0;
+        margin-right: 10px;
+        padding-bottom: 0;
+    }
+
 }
