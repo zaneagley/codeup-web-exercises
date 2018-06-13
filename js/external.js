@@ -1,3 +1,5 @@
+(function() {
+
 
 // Practice
 
@@ -55,6 +57,7 @@ var discountApproved = premiumMember || (amountOfItemsForDiscount <= amountOfIte
 
 alert(discountApproved);
 
+})();
 
 
 
