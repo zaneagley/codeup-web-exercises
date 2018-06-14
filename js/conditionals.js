@@ -23,7 +23,94 @@
 
 var enterNumber = confirm("Hello! If you would like to enter a number, please press Ok!");
 
-var enterNumber = (true) ? "Alright, give us a number!" : "Alrighty then.";
+
+
+if (enterNumber) {
+    var number = prompt("Alright, please enter a number!");
+    oddOrEven(number);
+}
+else {
+    alert("Snooze, ya lose.")
+}
+
+
+//  Initial setup for
+
+/*if (enterNumber) {
+    var number = prompt("Alright, please enter a number!");
+
+    if (number % 2 == 0)
+    {
+        alert("This number is even!");
+        alert((parseInt(number)) + 100);
+        (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
+    }
+    else {
+        alert("Thank you for your participation!")
+    }
+
+    if (Math.abs(number % 2) == 1)
+    {
+        alert("This number is odd!");
+        alert((parseInt(number)) + 100);
+        (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
+    }
+    else {
+        alert("Thank you for your participation!")
+    }
+
+
+}*/
+
+// Splitting the previous code into functions.
+
+
+function evenNumber(number) {
+    if (number % 2 == 0)
+    {
+        alert("This number is even!");
+        alert((parseInt(number)) + 100);
+        (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
+    }
+    else {
+        alert("Thank you for your participation!")
+    }
+}
+
+function oddNumber(number) {
+    if (Math.abs(number % 2) == 1)
+    {
+        alert("This number is odd!");
+        alert((parseInt(number)) + 100);
+        (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
+    }
+    else {
+        alert("Thank you for your participation!")
+    }
+}
+
+function oddOrEven(number) {
+
+    if (number % 2 == 0) {
+        evenNumber(number);
+
+
+    }
+    else if (Math.abs(number % 2) == 1) {
+        oddNumber(number)
+    }
+
+    else {
+        alert("That is not a number!")
+    }
+
+}
+
+
+
+
+
+
 
 
 
@@ -55,6 +142,9 @@ var enterNumber = (true) ? "Alright, give us a number!" : "Alrighty then.";
 //                  will contain a different color everytime the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
@@ -66,12 +156,50 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Refactor your above function to use a switch-case statement
  */
 
+function analyzeColor(color) {
+    switch (color) {
+        case "red":
+            return "Strawberries are red";
+            break;
+        case "orange":
+            return "Oranges are... orange";
+            break;
+        case "yellow":
+            return "Bananas are yellow";
+            break;
+        case "green":
+            return "Grass is green";
+            break;
+        case "blue":
+            return "blue is the color of the sky.";
+            break;
+        case "indigo":
+            return "Indigo is indigo";
+            break;
+        case "violet":
+            return "Violets are violet";
+            break;
+        default:
+            return "I don't know that color.";
+    }
+
+}
+
+    console.log(analyzeColor(randomColor));
+
+
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+var userColor = prompt("What is your favorite color?");
+
+alert(analyzeColor(userColor));
+
 
 /* ########################################################################## */
 
@@ -95,6 +223,37 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+var totalAmount = prompt("How much is the total cost?")
+
+
+ function calculateTotal(luckyNumber, totalAmount) {
+        switch (luckyNumber){
+            case 1:
+                return (10 / 100) * totalAmount;
+                break;
+            case 2:
+                return (25 / 100) * totalAmount;
+                break;
+            case 3:
+                return (35 / 100) * totalAmount;
+                break;
+            case 4:
+                return (50 / 100) * totalAmount;
+                break;
+            case 5:
+                return 0;
+                break;
+            default:
+                return  totalAmount;
+
+
+
+        }
+
+}
+
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -103,7 +262,15 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
+
+alert("Your lucky number is: " + (luckyNumber));
+alert("Your price BEFORE the discount was: " + (totalAmount));
+
+alert("Your new price after the discount is: " + (totalAmount - (calculateTotal(luckyNumber, totalAmount))));
+
+
+    console.log(luckyNumber);
 
 })();
