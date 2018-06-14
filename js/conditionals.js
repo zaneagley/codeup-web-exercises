@@ -34,7 +34,7 @@ else {
 }
 
 
-//  Initial setup for
+//  Initial setup for numbers.
 
 /*if (enterNumber) {
     var number = prompt("Alright, please enter a number!");
@@ -69,11 +69,11 @@ function evenNumber(number) {
     if (number % 2 == 0)
     {
         alert("This number is even!");
-        alert((parseInt(number)) + 100);
+        alert((number + 100));
         (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
     }
     else {
-        alert("Thank you for your participation!")
+        alert("Hey. Why didn't you give me a number?")
     }
 }
 
@@ -81,11 +81,11 @@ function oddNumber(number) {
     if (Math.abs(number % 2) == 1)
     {
         alert("This number is odd!");
-        alert((parseInt(number)) + 100);
+        alert((number + 100));
         (number > 0) ? alert("This number is positive!") : alert("This number is negative!")
     }
     else {
-        alert("Thank you for your participation!")
+        alert("Hey. Why didn't you give me a number?")
     }
 }
 
@@ -101,7 +101,7 @@ function oddOrEven(number) {
     }
 
     else {
-        alert("That is not a number!")
+        alert("Hey. Why didn't you give me a number?")
     }
 
 }
