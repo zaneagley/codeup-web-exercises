@@ -14,11 +14,11 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  *!/
 
-    function sayHello(greeting) {
-        return greeting
+    function sayHello(name) {
+        return 'Hello, ' + name;
 }
 
-    console.log(sayHello("Hello!"));
+    console.log(sayHello("codeup"));
 
 /!**
  * TODO:
@@ -121,7 +121,7 @@ alert(calculateTip(bill));
  *!/
 
 var originalPrice = prompt("What is the current total paying for?");
-var discountPercent = .2;
+var discountPercent = .12;
 
 
  function applyDiscount(originalPrice, dicountPercent) {
