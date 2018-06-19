@@ -48,7 +48,7 @@ for (var i = 0; i < names.length; i++) {
 
     names.forEach(function(name) {
         console.log(name);
-    })
+    });
 
     /**
      * TODO:

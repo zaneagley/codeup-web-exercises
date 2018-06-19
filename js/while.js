@@ -1,12 +1,12 @@
 
-/*
-var i = 2
+// Complete
 
-while (i < 65537) {
-    console.log(i);
+var i = 1
+
+while (i < 65536) {
     var i = i * 2;
+    console.log(i);
 }
-*/
 
 
 
@@ -20,6 +20,7 @@ var conesBought = Math.floor(Math.random() * 5) + 1;
 
 
 
+// Complete
 
 do {
     conesBought = Math.floor(Math.random() * 5) + 1;

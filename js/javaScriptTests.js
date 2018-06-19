@@ -20,7 +20,9 @@ for(var i=1; i<=size; i++)
 
 /// FizzBuzz -Works!-
 
-/*for (var counter = 0; counter < 100; counter = counter +1)
+/*
+
+for (var counter = 0; counter < 100; counter = counter +1)
 
 
 if ((((counter % 5) === 0) && (counter % 3)) === 0) {
@@ -35,9 +37,9 @@ else if ((counter % 5) === 0)  {
 }
 else {
     console.log(counter)
-}*/
+}
 
-
+*/
 
 
 
