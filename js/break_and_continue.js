@@ -1,3 +1,5 @@
+(function () {
+
 
 
 
@@ -16,7 +18,7 @@ while (!(number % 2)) {
 
 for(i = 1; i <= 50; i++){
     if (number == i) {
-        console.log("Yikes! Skipping " + number)
+        console.log("Yikes! Skipping " + number);
         continue;
     }
 
@@ -26,3 +28,5 @@ for(i = 1; i <= 50; i++){
     console.log("Here is an odd number: " + i);
 
 }
+
+})();

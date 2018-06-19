@@ -1,3 +1,7 @@
+(function () {
+
+"use strict"
+
 
 //Complete
 
@@ -55,5 +59,5 @@ for (var t = 0, i = Math.floor(Math.random() * 200) + 20 ; t < 10; i = Math.floo
 
 
 
-
+})();
 
