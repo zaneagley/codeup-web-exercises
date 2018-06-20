@@ -198,10 +198,10 @@ function createBook(input) {
         var choice = input.toLowerCase();
         while (choice !== "quit") {
             if (choice === "create book") {
-               var createBookListing = prompt("What book would you like to add?");
-                 books.push(books.length);
-                 books[books.length -1].title = createBookListing;
-               // console.log("Thank you for your contribution! The new book list is: " + books[1].title);
+                var createBookListing = prompt("What book would you like to add?");
+                books.push(books.length);
+                books[books.length -1].title = createBookListing;
+                console.log("Thank you for your contribution! The new book list is: " + books[1].title);
                 books.forEach(function (element, index, array) {
                     console.log(books);
                     console.log("Title: " + books[index].title)
