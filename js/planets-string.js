@@ -29,7 +29,12 @@
      * string, and <li> tags around each planet.
      */
 
-    var planetsString2 = planetsArray1.join("<ul>");
+    var planetsString2 = "placeHolder-|Mercury|-|Venus|-|Earth|-|Mars|-|Jupiter|-|Saturn|-|Uranus|-|Neptune|-placeHolder";
 
-    console.log(planetsString2);
+
+    var planetsString3 = planetsString2.split("|").join("<li>");
+    var planetsString3 = planetsString3.split("placeHolder").join("<ul>");
+    var planetsString3 = planetsString3.split("-").join("\n");
+
+    console.log(planetsString3);
 })();
