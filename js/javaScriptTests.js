@@ -537,15 +537,6 @@
     Example Output: "No"
 */
 
- var stringNumberLength = prompt("Enter a string with a number appended to the end.  The number should be the length of the whole string.")
-
-
-    for (var i = 0; i < stringNumberLength.length; i++) {
-     if (stringNumberLength[i] == Number(stringNumberLength)) {
-         var appendedNumber = Number(stringNumberLength[i])
-     }
-
-    }
 
 
     // code for clean phone numbers given as 512-435-2466 into 5124352466
