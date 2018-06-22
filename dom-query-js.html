@@ -24,7 +24,10 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
+<button id="headerButton">Button</button>
+<button id="colorList">List Coloring</button>
+<button id="subHeader">Sub Header</button>
+<button id="missionComplete">Complete the Mission!</button>
 <script>
     (function() {
         "use strict";
@@ -32,33 +35,57 @@
          var mainHeader = document.getElementById("main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            mainHeader.innerHTML = "Javascript it Cool";
+
         // TODO: Uncomment the next line and get the sub header element by id
          var subHeader = document.getElementById("sub-header") ;
 
         // TODO: Set the text color of subHeader to blue
-            subHeader.style.color = "blue";
+        
         // TODO: Uncomment the next line and get all list items
          var listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
-        for (var i = 0; i < listItems.length; i++) {
-            if (i == 0) {
-                listItems[i].style.color = "blue";
-            }
-            else if (i % 2 === 0) {
-                
-                listItems[i].style.color = "grey";
-            }
-        }
+
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
          var subParagraphs = document.getElementsByClassName("sub-paragraph") ;
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs[0].innerHTML = "Mission Accomplished!";
+
+
+        var headerButton = document.getElementById("headerButton");
+        var colorButton = document.getElementById("colorList");
+        var subHeaderButton = document.getElementById("subHeader");
+        var missionButton = document.getElementById("missionComplete");
+
+        //
+
+        headerButton.addEventListener("click", function () {
+            mainHeader.innerHTML = "Javascript it Cool";
+        });
+
+       subHeaderButton.addEventListener("click", function () {
+           subHeader.style.color = "blue";
+       });
+
+
+        colorButton.addEventListener("click", function () {
+            for (var i = 0; i < listItems.length; i++) {
+                if (i == 0) {
+                    listItems[i].style.color = "blue";
+                }
+                else if (i % 2 === 0) {
+
+                    listItems[i].style.color = "grey";
+                }
+            }
+        });
+
+        missionButton.addEventListener("click", function () {
+            subParagraphs[0].innerHTML = "Mission Accomplished!";
+        })
 
     })();
 </script>
