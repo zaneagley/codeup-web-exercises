@@ -77,6 +77,7 @@ function checkIfSameLetters(a, b) {
     secondWord.sort();
     for (var i = 0; i < firstWord.length; i++)
         if (firstWord[i] == secondWord[i]) {
+        console.log(firstWord + " " + secondWord);
         return true
         }
         else {
@@ -86,4 +87,4 @@ function checkIfSameLetters(a, b) {
 
 }
 
-console.log(checkIfSameLetters("Maybe", "EMyba"));
+console.log(checkIfSameLetters("overcast", "overacts"));

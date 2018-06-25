@@ -93,6 +93,28 @@
             subParagraphs[0].innerHTML = "Mission Accomplished!";
         })
 
+
+           document.addEventListener("click", function(e) {
+               console.log(e);
+           });
+
+
+           document.addEventListener("click", function(e) {
+               var red = e.screenX % 256;
+               var green = e.screenY % 256;
+               var blue = "ff";
+
+               console.log(e.screenX);
+               console.log(e.screenY);
+
+               red = red.toString(16);
+               green = green.toString(16);
+               blue = blue.toString(16);
+               document.body.style['background-color'] = "#" + red + green + blue;
+           });
+
+
+
     })();
 </script>
 </body>

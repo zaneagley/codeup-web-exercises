@@ -528,20 +528,21 @@
 */
 
 
-    /*
-    BONUS 2:
-    Write a program that takes a given string appended with a number at the end. The program will check the length of the string to verify the string is equal to the number appended. If the number appended equals the string length, output "Yes". if the number appended does not equal the string length, output "No".
-        Example Input: "geek5"
-    Example Output: "Yes"
-    Example Input: "codingchallenge25"
-    Example Output: "No"
-*/
+var bodyBackground = document.getElementById("test");
+var testButtonJS = document.getElementById("testButton");
+console.log(bodyBackground);
+console.log(testButtonJS);
 
+testButtonJS.addEventListener("click", function () {
+    bodyBackground.classList.toggle("BGforBody");
+
+})
 
 
     // code for clean phone numbers given as 512-435-2466 into 5124352466
 
- function cleanPhoneNumbers(phoneNums) {
+/*
+function cleanPhoneNumbers(phoneNums) {
     var phoneNumsArrs = phoneNums.split("\n");
         var cleanNumsArrs = [];
 
@@ -552,5 +553,6 @@
     return cleanNumsArrs;
 
     }
+    */
 
 })();
