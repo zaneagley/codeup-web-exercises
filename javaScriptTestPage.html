@@ -10,6 +10,70 @@
 <button id="testButton">Button</button>
 
 
+<h2>My Customers</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for coffee" title="Select a Coffee">
+
+<table id="myTable">
+    <tr class="header">
+        <th style="width:60%;">Name</th>
+        <th style="width:40%;">Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbkop</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Koniglich Essen</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Italy</td>
+    </tr>
+    <tr>
+        <td>North/South</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Paris specialites</td>
+        <td>France</td>
+    </tr>
+</table>
+
+
+
 <script src="js/javaScriptTests.js"></script>
+
+<script>
+
+function myFunction() {
+var input, filter;
+input = document.getElementsByClassName('my');
+filter = document.getElementById('myInput').value.toUpperCase();
+for (i = 0; i < input.length; i++) {
+var currentElem = input[i];
+var currentElemChild = input[i].children[0]
+if (currentElemChild.innerHTML.toUpperCase().indexOf(filter) > -1) {
+currentElem.style.display = "";
+} else {
+currentElem.style.display = "none";
+}
+}
+}
+document.getElementById('myInput').addEventListener('onkeyup', myFunction);
+</script>
 </body>
 </html>

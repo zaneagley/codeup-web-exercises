@@ -1,0 +1,35 @@
+
+body {
+
+}
+
+.flash {
+    background:blue;
+    -webkit-transition:background 5s;
+    -moz-transition:background 5s;
+    -o-transition:background 5s;
+    transition:background 5s
+}
+
+.flyAcross {
+    position: relative;
+    right: 500px
+}
+
+.hideFrame {
+    display: none;
+}
+
+.snoop {
+    position: relative;
+    bottom: 388px
+}
+
+#contentCenter {
+
+
+}
+
+#yayUnlock {
+
+}

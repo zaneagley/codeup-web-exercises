@@ -355,121 +355,121 @@
 
     */
 
-/*
-    while (true) {
-        var season = prompt("Please enter a season: Spring, Summer, Fall, or Winter");
-        var season = season.toLowerCase();
-        if (season === "spring", "summer", "fall", "winter") {
-            switch (season) {
-                case "spring":
-                    alert("Spring.");
-                    var month = prompt("Please choose a month: March, April, May");
-                    var month = month.toLowerCase()
-                    if (month == "mar", "march", "apr", "april", "may") {
-                        switch (month) {
-                            case "mar":
-                            case "march":
-                                alert("March");
-                                break;
-                            case "apr":
-                            case "april":
-                                alert("April");
-                                break;
-                            case "may":
-                                alert("May");
-                                break;
-                            default:
-                                alert("Please enter a valid month.")
-                        }
-
-                        break;
-                    }
-                case "summer":
-                    alert("Summer.");
-                    var month = prompt("Please choose a month: June, July, August");
-                    var month = month.toLowerCase()
-                    if (month == "jun", "june", "jul", "july", "aug", "august") {
-                        switch (month) {
-                            case "jun":
-                            case "june":
-                                alert("June");
-                                break;
-                            case "jul":
-                            case "july":
-                                alert("July");
-                                break;
-                            case "aug":
-                            case "august":
-                                alert("August");
-                                break;
-                            default:
-                                alert("Please enter a valid month.")
-                        }
-                        break;
-                    }
-                case "fall":
-                    alert("Fall.");
-                    var month = prompt("Please choose a month: September, October, November");
-                    var month = month.toLowerCase()
-                    if (month == "sep", "september", "oct", "october", "nov", "november") {
-                        switch (month) {
-                            case "sep":
-                            case "september":
-                                alert("September");
-                                break;
-                            case "oct":
-                            case "october":
-                                alert("October");
-                                break;
-                            case "nov":
-                            case "november":
-                                alert("November");
-                                break;
-                            default:
-                                alert("Please enter a valid month.")
-                        }
-                        break;
-                    }
-                case "winter":
-                    alert("Winter.");
-                    while (true) {
-                        var month = prompt("Please choose a month: December, January, February");
+    /*
+        while (true) {
+            var season = prompt("Please enter a season: Spring, Summer, Fall, or Winter");
+            var season = season.toLowerCase();
+            if (season === "spring", "summer", "fall", "winter") {
+                switch (season) {
+                    case "spring":
+                        alert("Spring.");
+                        var month = prompt("Please choose a month: March, April, May");
                         var month = month.toLowerCase()
-                        if (month === "dec", "december", "jan", "january", "feb", "february") {
+                        if (month == "mar", "march", "apr", "april", "may") {
                             switch (month) {
-                                case "dec":
-                                case "december":
-                                    alert("December");
+                                case "mar":
+                                case "march":
+                                    alert("March");
                                     break;
-                                case "jan":
-                                case "january":
-                                    alert("January");
+                                case "apr":
+                                case "april":
+                                    alert("April");
                                     break;
-                                case "feb":
-                                case "february":
-                                    alert("February");
+                                case "may":
+                                    alert("May");
                                     break;
                                 default:
-                                    alert("Please enter a valid month.");
+                                    alert("Please enter a valid month.")
+                            }
+
+                            break;
+                        }
+                    case "summer":
+                        alert("Summer.");
+                        var month = prompt("Please choose a month: June, July, August");
+                        var month = month.toLowerCase()
+                        if (month == "jun", "june", "jul", "july", "aug", "august") {
+                            switch (month) {
+                                case "jun":
+                                case "june":
+                                    alert("June");
                                     break;
+                                case "jul":
+                                case "july":
+                                    alert("July");
+                                    break;
+                                case "aug":
+                                case "august":
+                                    alert("August");
+                                    break;
+                                default:
+                                    alert("Please enter a valid month.")
                             }
                             break;
                         }
-                        else {
-                            continue;
+                    case "fall":
+                        alert("Fall.");
+                        var month = prompt("Please choose a month: September, October, November");
+                        var month = month.toLowerCase()
+                        if (month == "sep", "september", "oct", "october", "nov", "november") {
+                            switch (month) {
+                                case "sep":
+                                case "september":
+                                    alert("September");
+                                    break;
+                                case "oct":
+                                case "october":
+                                    alert("October");
+                                    break;
+                                case "nov":
+                                case "november":
+                                    alert("November");
+                                    break;
+                                default:
+                                    alert("Please enter a valid month.")
+                            }
+                            break;
+                        }
+                    case "winter":
+                        alert("Winter.");
+                        while (true) {
+                            var month = prompt("Please choose a month: December, January, February");
+                            var month = month.toLowerCase()
+                            if (month === "dec", "december", "jan", "january", "feb", "february") {
+                                switch (month) {
+                                    case "dec":
+                                    case "december":
+                                        alert("December");
+                                        break;
+                                    case "jan":
+                                    case "january":
+                                        alert("January");
+                                        break;
+                                    case "feb":
+                                    case "february":
+                                        alert("February");
+                                        break;
+                                    default:
+                                        alert("Please enter a valid month.");
+                                        break;
+                                }
+                                break;
+                            }
+                            else {
+                                continue;
+                            }
+
                         }
 
-                    }
-
-                default:
-                    alert("Please enter a valid season.")
-                    break;
+                    default:
+                        alert("Please enter a valid season.")
+                        break;
+                }
             }
+
         }
 
-    }
-
-    */
+        */
 
     /*
         GOLD STAR BONUS
@@ -487,56 +487,71 @@
     */
 
 
-
-
-
-
-
-
-
-
-
 // Array Bonuses
 
-/*
-    BONUSES 1:
-    Write a program to toggle all characters in a string: in a given string, toggle all characters to their opposite case. Special characters will not change.
-        Example input: "aBc12#""
-    Example output: "AbC12#"
+    /*
+        BONUSES 1:
+        Write a program to toggle all characters in a string: in a given string, toggle all characters to their opposite case. Special characters will not change.
+            Example input: "aBc12#""
+        Example output: "AbC12#"
+        */
+
+
+    /*
+
+        var letters = ['a', 'b', 'c', 'A', 'B', 'C', '(', ')', '+', '-', '~', '*'];
+
+
+
+        for (var i = 0; i<letters.length; i++) {
+            if (letters[i] === letters[i].toUpperCase()
+                && letters[i] !== letters[i].toLowerCase()) {
+                console.log(letters[i].toLowerCase());
+            }
+            else if (letters[i] === letters[i].toLowerCase()
+                && letters[i] !== letters[i].toUpperCase()) {
+                console.log(letters[i].toUpperCase());
+            }
+            else {
+                console.log(letters[i])
+            }
+        }
+    */
+
+    /*
+    var bodyBackground = document.getElementById("test");
+    var testButtonJS = document.getElementById("testButton");
+    console.log(bodyBackground);
+    console.log(testButtonJS);
+
+    testButtonJS.addEventListener("click", function () {
+        bodyBackground.classList.toggle("BGforBody");
+
+    })
     */
 
 
-/*
 
-    var letters = ['a', 'b', 'c', 'A', 'B', 'C', '(', ')', '+', '-', '~', '*'];
-
-
-
-    for (var i = 0; i<letters.length; i++) {
-        if (letters[i] === letters[i].toUpperCase()
-            && letters[i] !== letters[i].toLowerCase()) {
-            console.log(letters[i].toLowerCase());
-        }
-        else if (letters[i] === letters[i].toLowerCase()
-            && letters[i] !== letters[i].toUpperCase()) {
-            console.log(letters[i].toUpperCase());
-        }
-        else {
-            console.log(letters[i])
+//search bar
+    function myFunction() {
+        var input, filter;
+        input = document.getElementsByClassName('myLinks');
+        filter = document.getElementById('myInput').value.toUpperCase();
+// Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < input.length; i++) {
+            var currentElem = input[i];
+            var currentElemChild = input[i].children[0]
+            if (currentElemChild.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                currentElem.style.display = "";
+            } else {
+                currentElem.style.display = "none";
+            }
         }
     }
-*/
+    document.getElementById('myInput').addEventListener('onkeyup', myFunction);
 
 
-var bodyBackground = document.getElementById("test");
-var testButtonJS = document.getElementById("testButton");
-console.log(bodyBackground);
-console.log(testButtonJS);
 
-testButtonJS.addEventListener("click", function () {
-    bodyBackground.classList.toggle("BGforBody");
-
-})
 
 
     // code for clean phone numbers given as 512-435-2466 into 5124352466
@@ -552,6 +567,264 @@ function cleanPhoneNumbers(phoneNums) {
     });
     return cleanNumsArrs;
 
+    }
+    */
+
+/*
+
+// 1. Define a function named `isBoolean` that takes in a value and returns a
+// boolean if the argument provided is a boolean value or not.
+
+    function isBoolean(input) {
+        var output;
+        //
+        if (input === true || input === false) {
+            output = true;
+        } else {
+            output = false;
+        }
+        return output;
+    }
+
+    //   3. Define a function named `isString` that takes in a value as an input and returns a boolean
+// if the input provided is a STRING or not. Numeric strings will count as strings and should return true.
+    function isString(input) {
+        return typeof input === 'string';
+    }
+    //   2. Define a function named `isNumeric` that takes in a value and returns true IF the input is numeric OR not. Numeric strings are numeric and should return true.
+        function isNumeric(input) {
+        return !isNaN(input) && !isBoolean(input) && input !== null;
+    }
+    //   4. Define a function named `isArray` that takes in an input and returns a boolean whether or not that input is an array or not.
+
+        function isArray(input) {
+        return Array.isArray(input);
+    }
+    //   5. Define a function named `isNegative` that accepts a number and returns `true` or `false` based on whether the input is less than zero.
+
+        function isNegative(input) {
+        return isNumeric(input) && input < 0;
+    }
+    //  6. Define a function named `isPositive` that accepts an input and returns `true` or `false` based on whether the input is above zero. Any non-numeric input should return false.
+
+        function isPositive(input) {
+        return isNumeric(input) && input > 0;
+    }
+    //   7. Define a function named `increment` that takes in an input and adds 1 to it if the input is NUMERIC.
+    //     If the input is NOT numeric, then return false.
+
+        function increment(input) {
+        if (isNumeric(input)) {
+            return input +1;
+        } else {
+            return false;
+        }
+
+    }
+    //  8. Define a function named `decrement`. If the provided input is numeric, the function should subtract 1 and return the result. If the input is not numeric, `decrement` should return false.
+
+        function decrement(input) {
+        if (isNumeric(input)) {
+            return input - 1;
+        } else {
+            return false;
+        }
+    }
+    //   9. Define a function named `square`. If the provided input is NUMERIC, `square` should return the number multiplied by itself. If the input is not numeric, `square`, should return false.
+
+        function square(input) {
+        if (isNumeric(input) || input === 1) {
+            return input * input;
+        }
+        return false;
+    }
+   // 10. Define a function named `upperCase` that takes in a single input. If the input is not a string, return `false`.  If the input is a non-numeric string, then return it with all the letters capitalized.
+
+        function upperCase(input) {
+
+        if (input === '') {
+            return '';
+        }
+
+        if (isString(input) && !isNumeric(input)) {
+            return input.toUpperCase();
+        }
+        return false;
+    }
+  //  11. Write a function named `isPalindrome` that takes in a single input.
+  //      If the input is a numeric string, then return `false`.
+  //      If the input is a string, then return true if the string is the same forwards as it is backwards.
+  //      Return false if the string is different forwards from backwards. Ignore capitalization.
+
+        function isPalindrome(input) {
+
+        var lowerInput;
+        var reverseString;
+
+        //use empty string IF to help address that missing spec\\
+        //input === undefined, return false;
+        //another if for !isArray(input), false;
+
+        if (isNumeric(input)) {
+            return false;
+        }
+        if (isString(input)) {
+//        reverse string & compare to original ******************
+            lowerInput = input.toLowerCase()
+            reverseString = lowerInput.split('').reverse().join('');
+            //need to check if reversed input is equal to original
+            if (lowerInput === reverseString) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+   // 13. Write a function named `containsVowel` that takes in a single input as its argument.
+// If the argument is NOT a string, then return `false`. XX
+// If the argument IS a string, then return TRUE if the string contains ANY of the vowels ‘a’, ‘e’, ‘i’, ‘o’, or ‘u’ either uppercased or lowercased.
+// Ignore ‘y’. If the string DOES NOT CONTAIN any of these vowels, then return `false`.
+
+        function containsVowel(input) {
+        if (input !== isString()) {
+            return false;
+        } else if (isString.includes('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')) {
+            return true;
+        }
+    }
+   // 14. Write a function named `add` that takes in two inputs. XXXXXXXXXXXX
+// If both inputs provided are numeric, `add` will return the sum of both inputs.
+// If one or both inputs is not numeric, `add` should return false.
+
+    function add(input1, input2) {
+        if (input1 === parseFloat(input1) && input2 === parseFloat(input2)) {
+            return input1 + input2;
+        } else if (input1 === isFinite(input1) && input2 === isFinite(input2) || isNaN(!input1) && isNaN(!input2)) {
+            return input1 + input2;
+        }
+        return false;
+    }
+    //15. Write a function named 'multiply' that takes in two inputs.
+// If both inputs provided are numeric, `multiply` returns the product of the first input multiplied by the second.
+// If either or both inputs are not numeric, `multiply` should return false.
+
+        function multiply(a, b) {
+        if (isNumeric(a) && isNumeric(b)) {
+            return (a) * (b);
+        }
+        return false;
+    }
+   // 16. Sum of Squares:
+
+        function sumOfSquares(a, b) {
+            // console.log(a, b);
+            var squareA = square(a);
+            // console.log('this is a^2:', squareA);
+
+            var squareB = square(b);
+            // console.log('this is b^2: ', squareB);
+
+            return add(squareA, squareB);
+        }
+
+        // Print array revevrse
+        function printReverse(arr) {
+            for (var i = arr.length -1; i >= 0 ; i-- ) {
+                console.log(arr[i])
+            }
+        }
+
+        printReverse([1,2,3,4,5,6]);
+*/
+
+
+//Assessment 2
+
+/*
+    function remove9s(arrNums) {
+
+        var outputArr = [];
+
+        arrNums.forEach(function (num) {
+            if (num !== 9){
+                outputArr.push(num)
+            }
+        });
+        return outputArr;
+    }
+
+
+    function capitalizeName(str) {
+        var names = str.split(" ");
+        for (var i = 0; i < names.length; i++) {
+            names[i] = names[i][0].toUpperCase() + names[i].slice(1)
+        }
+        return names.join(" ");
+    }
+
+
+
+    function capitalizeAllNames(arrNames) {
+        var outputArr = [];
+        arrNames.forEach(function (name) {
+            outputArr.push(capitalizeName(name))
+        });
+        return outputArr;
+    }
+
+    function countVowels(str) {
+        var count = 0;
+        var chars = str.split("");
+        chars.forEach(function (char) {
+            if (char === 'a' || char === 'e' ||char === 'i' ||char === 'o' ||char === 'u') {
+                count++;
+            }
+        });
+        return count;
+    }
+
+
+    function averageSales(salesPeople) {
+        var totalSales = 0;
+        salesPeople.forEach(function (person) {
+            totalSales += person.sales;
+        });
+        return totalSales / salesPeople.length
+    }
+
+
+
+    function analyzeWord(input) {
+
+        return {
+            word: input,
+            numberOfLetters: input.length,
+            numberOfVowels: countVowels(input)
+        };
+
+
+        var wordDetails = {};
+        wordDetails.word = input;
+        wordDetails.numberOfLetters = input.length;
+        wordDetails.numberOfVowels = countVowels(input);
+        return wordDetails;
+    }
+
+    function analyzeAllWords(arrStr) {
+        var outputArr = [];
+
+        arrStr.forEach(function (str) {
+            outputArr.push(analyzeWord(str));
+        });
+       return outputArr;
+    }
+
+
+    function padArray(array, length, fill) {
+        while (array.length < length){
+            array.push(fill)
+        }
+        return array;
     }
     */
 

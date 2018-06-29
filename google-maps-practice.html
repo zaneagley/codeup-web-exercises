@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Maps API Title</title>
+    <style>
+        /*
+        Need to set the height for the google map
+        */
+        #map-canvas {
+            height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+
+        <!-- div to hold the map -->
+    <div id="map-canvas"></div>
+
+    <script>
+
+
+        // function to run the google map
+
+        function initMap() {
+            var mapCanvas = document.getElementById('map-canvas');
+            // Must have map configuration of zoom and location.
+            var mapOptions = {
+              zoom: 13,
+              center: {
+                  lat: 29.426791,
+                  lng: -98.48602
+              }
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            // geocoding
+
+            var geo = new google.maps.Geocoder();
+
+            console.log(geo);
+/*
+
+            geo.geocode({address: "1 UTSA Circle"}, function (response, status) {
+                if (status === "OK") {
+                    console.log(response[0].geometry.location.lat());
+                    console.log(response[0].geometry.location.lng());
+
+                    map.setCenter(response[0].geometry.location);
+                }
+                 else {
+                    console.log("Invalid Address.")
+                }
+
+
+
+
+            });
+*/
+
+
+            // Reverse geocoding
+
+           /*
+            geo.geocode({location: {lat: 29.5845094, lng: -98.61719929999998 }}, function (response, status) {
+                if (status === "OK") {
+                    console.log(response[1].formatted_address);
+
+                    map.setCenter(response[0].geometry.location);
+                }
+                else {
+                    console.log("Invalid Address.")
+                }
+            });
+            */
+
+
+           // Marker
+
+           var marker = new google.maps.Marker({
+               position: {
+                   lat: 29.426791,
+                   lng: -98.48602
+               },
+               map: map
+           });
+
+
+           //Info Window
+
+            var infoWindow = new google.maps.InfoWindow({
+               content: "This is Codeup"
+            });
+
+            infoWindow.open(map, marker);
+
+
+            // Event Listener
+
+            map.addListener("dragend", function () {
+                infoWindow.open(map, marker);
+            });
+
+        }
+
+
+
+
+
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap" async defer></script>
+
+</body>
+</html>

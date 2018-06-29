@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Exercises</title>
+    <style>
+
+        .listClass {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="">JQuery</h1>
+    <input id="playInput" type="text"><button id="playButton">BTN</button> <button id="other">Button</button><input id="target" type="text" placeholder="This is a test...">
+    <div id="playOutput"></div>
+    <button id="buttonBiggerFont">Increase Font Size</button>
+    <p class="important">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet beatae culpa debitis ex fuga hic in itaque placeat praesentium quo repellat sint vitae! Commodi dolor error ipsam officia quo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet beatae culpa debitis ex fuga hic in itaque placeat praesentium quo repellat sint vitae! Commodi dolor error ipsam officia quo!</p>
+    <p class="important" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet beatae culpa debitis ex fuga hic in itaque placeat praesentium quo repellat sint vitae! Commodi dolor error ipsam officia quo!</p>
+    <p class="important">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet beatae culpa debitis ex fuga hic in itaque placeat praesentium quo repellat sint vitae! Commodi dolor error ipsam officia quo!</p>
+    <p id="moving">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, amet beatae culpa debitis ex fuga hic in itaque placeat praesentium quo repellat sint vitae! Commodi dolor error ipsam officia quo!</p>
+
+    <div id="listDiv">
+        <h1 id="listTitle">This is a List Test</h1>
+        <p id="listPara">Sub section of info.</p>
+        <ul id="unorderList" class="codeup">
+            <li id="1" class="listClass">1</li>
+            <li id="2" class="listClass">2</li>
+            <li id="3" class="listClass">3</li>
+            <li id="4" class="listClass">4</li>
+            <li id="5" class="listClass">5</li>
+            <li id="6" class="listClass">6</li>
+        </ul>
+        <p id="codeup">Sub section of info.</p>
+    </div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+
+
+    $("buttonBiggerFont").click(function () {
+        ("body *").css('font-size','+=1');
+    });
+
+    $(document).ready(function() {
+        $('#buttonBiggerFont').click(function() {
+            $("li").css("font-size", function() {
+                return parseInt($(this).css('font-size')) + 20 + 'px';
+            });
+        });
+    });
+
+        $("p").dblclick(function () {
+            $("p").css("font-size", "18px")
+        });
+
+    // $("#listDiv").children.alert;
+
+
+    $(function () {
+        $("#playButton").click(function () {
+            $("#playOutput").text($("#playInput").val());
+        })
+    });
+
+    function animateIt() {
+        $( "#moving" ).slideToggle( "slow", animateIt );
+    }
+
+    // animateIt();
+
+    // $("button").click(function(){
+    //     $("p").fadeToggle();
+    // });
+
+
+    $( "#target" ).blur(function() {
+    });
+
+    $(document).ready(function () {
+       $("li").removeClass( "listClass" );
+    });
+
+    $(document).ready(function () {
+        $("li").mouseover(function () {
+            $("li").toggleClass( "listClass" );
+        });
+    });
+
+
+
+    $("h1").click(function () {
+        $(this).css("background-color","aqua");
+    });
+
+    // $("h1, p, li").on("mouseover",function () {
+    //     $(this).css("background-color","yellow");
+    // });
+
+   // alert("#listTitle").text()
+
+</script>
+
+
+</body>
+</html>
