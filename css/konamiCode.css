@@ -11,10 +11,25 @@ body {
     transition:background 5s
 }
 
+.hideInfo {
+    display: none;
+}
+
 .flyAcross {
     position: relative;
     right: 500px
 }
+
+.imagesBiggerHover {
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.imagesBiggerHover>img:hover {
+    width: 35%;
+    height: 35%;
+}
+
 
 .hideFrame {
     display: none;
@@ -26,11 +41,22 @@ body {
 
 .doge {
     position: fixed;
+    z-index: 1001;
+}
+
+.johnTravolta {
+    position: relative;
+    left: 1400px;
+    bottom: 700px;
 }
 
 .snoop {
     position: relative;
-    bottom: 388px
+    bottom: 388px;
+    z-index: 1000;
+}
+.gandalf {
+    border: solid 10px black;
 }
 
 .bigWow {
@@ -38,11 +64,21 @@ body {
     width: 90%;
 }
 
-#contentCenter {
-
-
+.realEstate {
+    width: 2000px;
+    height: 100%;
 }
 
-#yayUnlock {
+.memeRow {
+    height: 250px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
 
+.memeRow2 {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
 }

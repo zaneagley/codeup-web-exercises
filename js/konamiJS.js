@@ -1,10 +1,6 @@
 var secretLifeCode = [];
 var win = new Audio('sounds/wow.mp3');
-$('body').removeClass("flash");
-
-
-
-
+$('body').removeClass("flash ");
 
 
 
@@ -19,8 +15,8 @@ function makeNewPosition(){
 }
 
 function animateDiv(){
-    var newq = makeNewPosition();
-    $('.doge').animate({ top: newq[0], left: newq[1] }, function(){
+    var newpos = makeNewPosition();
+    $('.doge').animate({ top: newpos[0], left: newpos[1] }, function(){
         animateDiv();
     });
 
@@ -39,20 +35,30 @@ $("body").keydown(function (e) {
         if (extraLife === "38,38,40,40,37,39,37,39,65,66,13") {
             alert("Unlocked 30 extra lives!");
             $('body').toggleClass("flash");
+            $('.fakeInfo').addClass("hideInfo");
             $('.hideBigFrame').toggleClass("hideBigFrame");
             setTimeout(function () {
                 win.play();
-            }, 600);
-            setTimeout(function () {
-                $('#BigWow').css({"display": "none"});
-                $('.hideFrame').removeClass("hideFrame");
-                $(".snoop").animate({left: '1500px'}, 5000);
-                animateDiv();
-            }, 5000)
+               showMemes();
+                setTimeout(function () {
+                }, 3000)
+            },3000);
+
 
 
         }
     }
+
+    function showMemes() {
+        win.play();
+        $('#BigWow').css({"display": "none"});
+        $('.hideFrame').removeClass("hideFrame");
+        $(".snoop").animate({left: '1500px'}, 5000);
+        $(".memeRow").slideDown(5000);
+        animateDiv();
+    }
+
+
     if (secretLifeCode.length > 10) {
         secretLifeCode = [];
         console.log(secretLifeCode)
