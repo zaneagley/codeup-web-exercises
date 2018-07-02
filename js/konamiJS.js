@@ -59,6 +59,35 @@ $("body").keydown(function (e) {
     }
 
 
+    function fallingSnow() {
+
+        var $snowflakes = $(), qt = 20;
+
+        for (var i = 0; i < qt; ++i) {
+            var $snowflake = $('<div class="snowflakes"></div>');
+            $snowflake.css({
+                'left': (Math.random() * $('body').width()) + 'px',
+                'top': (- Math.random() * $('body').height()) + 'px'
+            });
+            // add this snowflake to the set of snowflakes
+            $snowflakes = $snowflakes.add($snowflake);
+        }
+        $('body').prepend($snowflakes);
+
+        $snowflakes.animate({
+            top: "500px",
+            opacity : "0",
+        }, Math.random() + 5000, function(){
+            $(this).remove();
+            // run again when all 20 snowflakes hit the floor
+            if (--qt < 1) {
+                fallingSnow();
+            }
+        });
+    }
+    fallingSnow();
+
+
     if (secretLifeCode.length > 10) {
         secretLifeCode = [];
         console.log(secretLifeCode)
