@@ -20,32 +20,77 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container text-center">
+        <h1>National Park FAQ</h1>
+        <hr>
+        <div class="m-2 p-3 border newsletter">
+            <h6 class="text-right xbtn">X</h6>
+            <h1>Would you like to sign up for our newsletter?</h1>
+
+            <!--<div class="alert alert-warning alert-dismissible" role="alert">-->
+                <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <!--<h1>Would you like to sign up for our newsletter?</h1>-->
+            <!--</div>-->
+        </div>
         <div class="row">
-            <div class="col-12">
-            <h1>National Park FAQ</h1>
-            <button id="hidenshow">Hide/Show List</button>
-            <dl>
-                <dt id="first">This is a list
+
+            <div class="col-4 text-left">
+                 <button id="hidenshow">Hide/Show List</button>
+                <dl>
+                    <dt id="first">This is a list
+                        <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                        <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                        <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                        <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                        <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt id="second">This is another list
                     <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
                     <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
                     <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
                     <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
                     <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-                </dt>
-            </dl>
-            <button id="highlightLowerListItem">Highlight</button>
-            <h3>Park One</h3>
-            <ul>Loridum
-                <li>Loruem Pie</li>
-                <li>Loruem Pie</li>
-                <li>Loruem Pie</li>
-                <li>Loruem Pie</li>
-            </ul>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt id="Third">This is yet another list
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    </dt>
+                </dl>
             </div>
+            <div class="col-4">
+                <button id="highlightLowestListItem">Highlight</button>
+                <h3>Park One</h3>
+                <ul class="invisible">Lorem
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                </ul>
+                <hr>
+                <h3>Park two</h3>
+                <ul class="invisible border">Lorem
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                    <li>Loruem Pie</li>
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <h2 class=" register invisible border">Would you like to register with this site?!</h2>
+            </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <script>
         (function () {
 
@@ -59,22 +104,37 @@
             });
 
             $('#hidenshow').click(function () {
-                $('.firstDD').toggleClass('invisible')
+                $('.firstDD').slideToggle(1000).toggleClass('invisible')
             });
 
-            $('#highlightLowerListItem').click(function () {
-                $('ul li').last().css('background-color', 'yellow');
-            });
+            $('#highlightLowestListItem').click(highlight);
+
+            function highlight(){
+                $('ul').each(function () {
+                    $(this).children().last().css('background-color', 'yellow');
+                })
+            }
+
+
 
             $('h3').click(function () {
-                $('ul').children().css('font-weight', 'bold')
+                $(this).next().children().css('font-weight', 'bold');
+                $(this).next().slideToggle(1000).toggleClass('invisible');
             });
 
             $('li').click(function () {
-                $('li').parent().css('color', 'blue')
-            })
+                $(this).parent().children().first().css('color', 'blue')
+            });
 
+            $('.xbtn').click(function () {
+                $('.newsletter').hide();
+            });
 
+            $(document).ready(function() {
+                setTimeout(function() {
+                $('.register').fadeIn().toggleClass('invisible')
+                }, 8000);
+            });
 
 
         })();
