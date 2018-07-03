@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Simon Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/simpleSimon.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <h1>Simple Simon</h1>
+            <div class="centering">
+                <div id="0" class="col-sm-6 firstBlock simonBlocks">
+                </div>
+                <div id="1" class="col-sm-6 secondBlock simonBlocks">
+                </div>
+                <div id="2" class="col-sm-6 thirdBlock simonBlocks">
+                </div>
+                <div id="3" class="col-sm-6 fourthBlock simonBlocks">
+                </div>
+            </div>
+            <h3>Current Score: <span id="scoreDisplay">0</span></h3>
+            <button id="playerButton" class="start btn btn-primary">Start</button>
+            <button id="resetbtn" class="btn btn-primary">Reset</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script rel="script" src="js/simpleSimon.js"></script>
+</body>
+</html>

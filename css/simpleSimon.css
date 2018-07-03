@@ -1,0 +1,61 @@
+.firstBlock, .secondBlock, .thirdBlock, .fourthBlock {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10%;
+}
+
+.simonBlocks:hover {
+    border: 3px solid black;
+}
+
+.firstBlock {
+    background-color: blue;
+}
+
+.firstBlock-active {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.secondBlock {
+    background-color: red;
+
+}
+
+.secondBlock-active {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.thirdBlock {
+    background-color: yellow;
+}
+
+.thirdBlock-active {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.fourthBlock {
+    background-color: green;
+}
+
+.fourthBlock-active {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 460px;
+    border: 7px solid black;
+}
+
+.win {
+    color: greenyellow;
+}
