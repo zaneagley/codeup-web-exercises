@@ -1,5 +1,6 @@
 var secretLifeCode = [];
 var win = new Audio('sounds/wow.mp3');
+var jazz = new Audio('sounds/gandalfmeme.mp3');
 $('body').removeClass("flash ");
 
 
@@ -34,14 +35,15 @@ $("body").keydown(function (e) {
         console.log(extraLife);
         if (extraLife === "38,38,40,40,37,39,37,39,65,66,13") {
             alert("Unlocked 30 extra lives!");
+            setTimeout(function () {
+                win.play();
+            }, 500);
             $('body').toggleClass("flash");
             $('.fakeInfo').addClass("hideInfo");
             $('.hideBigFrame').toggleClass("hideBigFrame");
             setTimeout(function () {
-                win.play();
                showMemes();
-                setTimeout(function () {
-                }, 3000)
+                jazz.play();
             },3000);
 
 
@@ -50,42 +52,13 @@ $("body").keydown(function (e) {
     }
 
     function showMemes() {
-        win.play();
         $('#BigWow').css({"display": "none"});
         $('.hideFrame').removeClass("hideFrame");
-        $(".snoop").animate({left: '1500px'}, 5000);
-        $(".memeRow").slideDown(5000);
+        $(".snoop").animate({left: '1700px'}, 10000);
+        $(".memeRow").slideDown(3000);
         animateDiv();
     }
 
-
-    function fallingSnow() {
-
-        var $snowflakes = $(), qt = 20;
-
-        for (var i = 0; i < qt; ++i) {
-            var $snowflake = $('<div class="snowflakes"></div>');
-            $snowflake.css({
-                'left': (Math.random() * $('body').width()) + 'px',
-                'top': (- Math.random() * $('body').height()) + 'px'
-            });
-            // add this snowflake to the set of snowflakes
-            $snowflakes = $snowflakes.add($snowflake);
-        }
-        $('body').prepend($snowflakes);
-
-        $snowflakes.animate({
-            top: "500px",
-            opacity : "0",
-        }, Math.random() + 5000, function(){
-            $(this).remove();
-            // run again when all 20 snowflakes hit the floor
-            if (--qt < 1) {
-                fallingSnow();
-            }
-        });
-    }
-    fallingSnow();
 
 
     if (secretLifeCode.length > 10) {

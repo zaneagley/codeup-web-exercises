@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAQ National Park</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
     <style>
 
         .invisible {
@@ -18,38 +20,64 @@
 
 </head>
 <body>
-
-    <h1>National Park FAQ</h1>
-    <button id="hidenshow">Hide/Show List</button>
-    <dl>
-        <dt id="first">This is a list
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-            <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
-        </dt>
-    </dl>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <h1>National Park FAQ</h1>
+            <button id="hidenshow">Hide/Show List</button>
+            <dl>
+                <dt id="first">This is a list
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                    <dd class="invisible firstDD">Lorem Ipsum of Sacrablu</dd>
+                </dt>
+            </dl>
+            <button id="highlightLowerListItem">Highlight</button>
+            <h3>Park One</h3>
+            <ul>Loridum
+                <li>Loruem Pie</li>
+                <li>Loruem Pie</li>
+                <li>Loruem Pie</li>
+                <li>Loruem Pie</li>
+            </ul>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
+        (function () {
 
-        $('#hidenshow').click(function () {
-            console.log("clicked")
-        });
 
-        $('.firstDD').click(function () {
-           $(this).css('background-color','yellow')
-        });
+            $('#hidenshow').click(function () {
+                console.log("clicked")
+            });
 
-        $('#hidenshow').click(function () {
-            $('.firstDD').toggleClass('invisible')
-        })
+            $('.firstDD').click(function () {
+               $(this).css('background-color','yellow')
+            });
 
+            $('#hidenshow').click(function () {
+                $('.firstDD').toggleClass('invisible')
+            });
+
+            $('#highlightLowerListItem').click(function () {
+                $('ul li').last().css('background-color', 'yellow');
+            });
+
+            $('h3').click(function () {
+                $('ul').children().css('font-weight', 'bold')
+            });
+
+            $('li').click(function () {
+                $('li').parent().css('color', 'blue')
+            })
+
+
+
+
+        })();
     </script>
 </body>
 </html>

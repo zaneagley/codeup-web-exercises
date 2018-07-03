@@ -11,6 +11,10 @@ body {
     transition:background 5s
 }
 
+.contra {
+    z-index: 1200;
+}
+
 .hideInfo {
     display: none;
 }
@@ -46,7 +50,7 @@ body {
 
 .johnTravolta {
     position: relative;
-    left: 1400px;
+    left: 1000px;
     bottom: 700px;
 }
 
@@ -65,7 +69,7 @@ body {
 }
 
 .realEstate {
-    width: 2000px;
+    width: 100%;
     height: 100%;
 }
 
@@ -74,6 +78,7 @@ body {
     width: 300px;
     margin: 0;
     padding: 0;
+    display:none
 }
 
 .memeRow2 {
