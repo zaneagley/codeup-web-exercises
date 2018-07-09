@@ -38,5 +38,37 @@
             "outdoor"
         ],
         "price": 62
-}
+    }, {
+        "title": "Chainsaw",
+        "quantity": 34,
+        "categories": [
+            "tool",
+            "outdoor"
+        ],
+        "price": 135
+    }, {
+        "title": "Rake",
+        "quantity": 12,
+        "categories": [
+            "tool",
+            "outdoor"
+        ],
+        "price": 14.99
+    }, {
+        "title": "Leather Gloves (Pair)",
+        "quantity": 9,
+        "categories": [
+            "protection",
+            "outdoor"
+        ],
+        "price": 25
+    }, {
+        "title": "Paint (Gallon)",
+        "quantity": 50,
+        "categories": [
+            "indoor",
+            "outdoor"
+        ],
+        "price": 20
+    }
 ]

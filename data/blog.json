@@ -19,12 +19,33 @@
     },
     {
         "title": "The Third Post",
-        "content": "This post, is the greatest post, ever conceived.",
+        "content": "Godard flexitarian humblebrag cardigan chillwave lo-fi austin tumeric retro quinoa shabby chic next level schlitz cronut paleo. Brunch locavore vegan four dollar toast, organic banjo la croix pop-up master cleanse put a bird on it heirloom everyday carry pabst bitters. Listicle ugh flexitarian, blog master cleanse 3 wolf moon mumblecore offal enamel pin locavore banjo slow-carb edison bulb vape kombucha. Banh mi celiac asymmetrical locavore vice beard.",
         "categories": [
-            "Words",
-            "Letters",
-            "Textures"
+            "words",
+            "letters",
+            "textures"
         ],
         "date": "March 17, 2015"
+    },
+    {
+        "title": "The Fourth Post",
+        "content": "Activated charcoal hammock af brunch selvage, thundercats put a bird on it fam normcore scenester. Tacos ugh kitsch, humblebrag scenester listicle vape ramps plaid jean shorts. Intelligentsia kombucha flannel, taxidermy raw denim raclette typewriter heirloom cronut shaman art party. <p>Echo park pabst salvia trust fund, skateboard air plant farm-to-table cardigan DIY. Next level hella tumeric asymmetrical trust fund YOLO shoreditch chartreuse, quinoa gluten-free deep v pinterest portland. Hexagon deep v narwhal tumblr kombucha vice ennui put a bird on it art party heirloom austin. Portland fanny pack sartorial gastropub actually austin keytar. Echo park pabst kogi ramps tattooed unicorn. Tumblr scenester woke, twee copper mug kogi lomo crucifix godard yuccie banh mi taxidermy. Direct trade mumblecore stumptown actually freegan polaroid hell of umami pork belly kogi live-edge organic dreamcatcher. Lumbersexual kombucha microdosing pitchfork chartreuse hoodie. Meh migas plaid twee prism single-origin coffee brunch authentic ramps, ugh raw denim typewriter.</p>",
+        "categories": [
+            "april",
+            "fools",
+            "day"
+        ],
+        "date": "April 1, 2015"
+    },
+    {
+        "title": "The Fifth Post",
+        "content": "Tote bag microdosing cred hell of keffiyeh chartreuse live-edge schlitz hoodie mumblecore craft beer street art taiyaki. Affogato photo booth gentrify, pinterest pitchfork art party DIY celiac brooklyn subway tile fam. Flexitarian yr tacos sartorial banh mi narwhal. Celiac normcore four loko street art 3 wolf moon. Celiac bushwick gentrify shabby chic VHS, air plant chambray woke wayfarers vaporware drinking vinegar tofu. Vexillologist banjo church-key vice everyday carry, kogi post-ironic meditation woke schlitz vinyl poke leggings tbh twee.",
+        "categories": [
+            "this",
+            "that",
+            "stuff"
+        ],
+        "date": "May 25, 2015"
     }
+
 ]
