@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="names-list">
+    </div>
+    <button id="add-names-btn">Add Names</button>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+
+    $(document).ready(function () {
+        var people = [
+            {
+                name: "Fred",
+                favColor: "red"
+            },
+            {
+                name: "Sally",
+                favColor: "blue"
+            },
+            {
+                name: "Tom",
+                favColor: "yellow"
+            }
+        ];
+
+        $('#add-names-btn').click(function () {
+            $(people).each(function (index, value) {
+                $('#names-list').append('<li>' + value.name + '</li>');
+            });
+            $('li').each(function (i, v) {
+                console.log(people.favColor);
+                $('li').css('color' + people.favColor)
+            })
+        })
+
+    })
+
+
+    // In-depth solution
+    //
+    // $(document).ready(function() {
+    //     "use strict";
+    //
+    //     var people = [
+    //         {
+    //             name: "Fred",
+    //             favColor: "red"
+    //         },
+    //         {
+    //             name: "Sally",
+    //             favColor: "blue"
+    //         },
+    //         {
+    //             name: "Tom",
+    //             favColor: "yellow"
+    //         }
+    //     ];
+    //
+    //     function buildList(arrObjs) {
+    //         var output = "";
+    //         output += "<ul>";
+    //         arrObjs.forEach(function(person) {
+    //             output += "<li style='color:"+ person.favColor + "'>" + person.name + "</li>";
+    //         });
+    //         output += "</ul>";
+    //         return output;
+    //     }
+    //
+    //     $('#add-names-btn').click(function() {
+    //         $('#names-list').html(buildList(people));
+    //     });
+    //
+    // });
+    //
+
+
+</script>
+</body>
+</html>
