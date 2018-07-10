@@ -60,7 +60,7 @@
 
 
 
-    $.ajax("data/inventory.json").done(function (data) {
+    $.ajax("data/inventory.json").done(function (data, status, jqXhr) {
         var output = '';
         $.each(data, function(i, item) {
             output += ('<tr class="p-4 highlightHover">');
@@ -71,6 +71,8 @@
             output += '</tr>';
             $('#insertProducts').html(output);
 
+        }).fail(function (xqXhr, status, error) {
+            alert('Something went wrong! ' + status + ' ' + error)
         });
     });
 

@@ -24,7 +24,7 @@
 
 
         $('#getJoke').click(function () {
-            $.ajax("http://api.icndb.com/jokes/random?firstName=Dave&lastName=the+Cable+Guy").done(function (data) {
+            $.ajax("http://api.icndb.com/jokes/random").done(function (data) {
                 $('#message').html(data.value.joke)
             })
 
