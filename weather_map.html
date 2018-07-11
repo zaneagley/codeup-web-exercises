@@ -18,7 +18,7 @@
         <h2 id="chosenCity"></h2>
     </div>
     <div class="row m-0">
-        <div class="col-xs-12 col-sm-2  mx-auto features">
+        <div class="col-sm-12 col-md-2  mx-auto features">
             <label class="" for="daysToShow"><strong>Days Displayed:</strong></label>
            <div>
                <select id="daysToShow" class="">
@@ -30,12 +30,33 @@
                </select>
            </div>
         </div>
-        <div class="col-xs-12 col-sm-4  mx-auto features">
+
+        <div class="col-sm-12 col-md-6 mx-auto chkboxInputs">
+            <h4 class="text-center">Display:</h4>
+                <span>
+                    <input type="checkbox" id="temperature" class="chkbox" name="temperature" value="temperature" checked>
+                    <label class="chkboxHover" for="temperature">Temperature</label>
+                    <input type="checkbox" id="icon" class="chkbox" name="icon" value="icon" checked>
+                    <label class="chkboxHover" for="icon">Icon</label>
+                    <input type="checkbox" id="conditions" class="chkbox" name="conditions" value="conditions" checked>
+                    <label class="chkboxHover" for="conditions">Conditions</label>
+                    <input type="checkbox" id="humidity" class="chkbox" name="humidity" value="humidity" checked>
+                    <label class="chkboxHover" for="humidity">Humidity</label>
+                    <input type="checkbox" id="wind"  class="chkbox"name="wind" value="wind" checked>
+                    <label class="chkboxHover" for="wind">Wind</label>
+                    <input type="checkbox" id="pressure" class="chkbox" name="pressure" value="pressure" checked>
+                    <label class="chkboxHover" for="pressure">Pressure</label>
+                </span>
+        </div>
+        <div class="col-sm-12 col-md-3  mx-auto features">
             <input id="searchInput" type="text" placeholder="Enter Address...">
             <div>
                 <button id="submitBtn" type="submit">Submit</button>
             </div>
         </div>
+    </div>
+    <div class="row">
+
     </div>
     <div id="forecast" class="row m-0 forecastBoxes">
     </div>
