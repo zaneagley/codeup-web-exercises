@@ -1,4 +1,70 @@
+body {
+    background: no-repeat center center fixed;
+    background-image: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: AppleGothic;
+}
+
+h1 {
+    background: linear-gradient(to bottom, cornflowerblue, floralwhite);
+    background-size: 100px;
+    border: 1px solid black;
+    border-radius: 20%;
+    box-shadow: 4px 4px 4px black;
+    padding: 20px;
+    text-shadow: 1px 1px yellow;
+}
+
+h2 {
+    background: linear-gradient(to top, cornflowerblue, floralwhite);
+    background-size: 100px;
+    border: 1px solid black;
+    border-radius: 25%;
+    box-shadow: 3px 3px 2px black;
+    padding: 20px;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+.features {
+    padding: 15px;
+    background: linear-gradient(to bottom, deepskyblue, blanchedalmond);
+    border-radius: 20%;
+    text-shadow: 2px 2px 4px whitesmoke;
+    box-shadow: 2px 2px 3px black;
+    max-width: 200px;
+
+}
+
+.forecastBoxes {
+    border-radius: 5%;
+    box-shadow: 4px 11px 4px blue;
+}
+
+.forecastColor {
+    background: linear-gradient(to top, ghostwhite, lightcyan);
+}
+
 #map-canvas {
     height: 500px;
     width: 100%;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px blue;
+}
+
+#searchInput {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 200px;
+}
+
+#submitBtn {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: floralwhite;
+    text-shadow: 2px 2px 2px ghostwhite;
+    box-shadow: 0 1px 4px black;
 }

@@ -10,18 +10,35 @@
     <title>Weather Map</title>
 </head>
 <body class="bg-info">
-<div class="container text-center">
-        <h1>Weather Map</h1>
+<div class="container text-center justify-content-center">
+    <div class="row d-flex justify-content-center">
+        <h1><strong>Weather Map</strong></h1>
+    </div>
+    <div class="row d-flex justify-content-center">
         <h2 id="chosenCity"></h2>
-    <select id="daysToShow">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3" selected>3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-        <div id="forecast" class="row">
+    </div>
+    <div class="row m-0">
+        <div class="col-xs-12 col-sm-2  mx-auto features">
+            <label class="" for="daysToShow"><strong>Days Displayed:</strong></label>
+           <div>
+               <select id="daysToShow" class="">
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3" selected>3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+               </select>
+           </div>
         </div>
+        <div class="col-xs-12 col-sm-4  mx-auto features">
+            <input id="searchInput" type="text" placeholder="Enter Address...">
+            <div>
+                <button id="submitBtn" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="forecast" class="row m-0 forecastBoxes">
+    </div>
     <div id="map-canvas">
     </div>
 </div>
