@@ -6,6 +6,7 @@
     var marker = '';
 
 
+        // Original setting Map and Marker
 
     function initMap() {
         var mapCanvas = document.getElementById('map-canvas');
@@ -45,17 +46,47 @@
             $('#chosenCity').innerHTML = '<p>Currently dragging marker...</p>';
         });
         marker.addListener('click', function () {
-            map.setZoom(12);
             map.setCenter(marker.getPosition());
         });
 
+        // Submits the address/place tracking input
 
         $('#submitBtn').click(function () {
-            geocodeAddress(geocoder, map);
-            $('html, body').animate({
-                scrollTop: $('#map-canvas').offset().top + 'px'
-            }, 'fast');
+            enterBtn()
         });
+
+        // Enables pressing Enter key to submit
+
+        $('#searchInput').keyup(function (event) {
+            if (event.keyCode === 13) {
+                enterBtn()
+            }
+        })
+
+        // Grabs the location that was double clicked, moving the marker
+        // and cycling through the weather data.
+
+        google.maps.event.addListener(map,'dblclick',function(event) {
+            var doubleClickPos = event.latLng;
+            marker.setPosition(doubleClickPos);
+            lat = marker.getPosition().lat();
+            lng = marker.getPosition().lng();
+            $.ajax("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lng + "&APPID=027a0cfc318b8db92387b938997021b0").done(function (data) {
+                geocodeLatLng(geocoder, map, infowindow, data);
+            });
+        });
+
+        // When pressing the submit button for search input
+        // cycles through the weatherApp function and scrolls
+        // down to the map.
+
+        function enterBtn(){
+                geocodeAddress(geocoder, map);
+                $('html, body').animate({
+                    scrollTop: $('#map-canvas').offset().top + 'px'
+                }, 'fast');
+            };
+
 
 
         function geocodeAddress(geocoder, resultsMap) {
@@ -80,7 +111,6 @@
             geocoder.geocode({'location': latlng}, function (results, status) {
                 if (status === 'OK') {
                     if (results[0]) {
-                        map.setZoom(9);
                         marker.setPosition(latlng);
                         infowindow.setContent(weatherMarkerInfo(data));
                         infowindow.open(map, marker);
@@ -102,13 +132,22 @@
             });
         });
     }
-        // Search library
 
+    //       /\
+    //       |    All Google Maps and API related functions
+    //       |
+
+
+    // Original output for the page
 
     $.ajax("http://api.openweathermap.org/data/2.5/forecast?id=4726206&APPID=027a0cfc318b8db92387b938997021b0").done(function (data) {
         weatherApp(data)
     });
 
+
+    // Main Function
+    // Creates an empty array, cycles through the 40 available
+    // forecast arrays, and outputs depending on selected checkboxes
 
     function weatherApp(data) {
         var arrDays = [];
@@ -146,10 +185,18 @@
         }
         var output = '';
         var min_max = [];
+
+        // Per the above getMinMaxDayTemp, need i to start at 1
+        // to enable the getMinMaxDayTemp to accumilate properly
+
         for (var i = 1; i<=arrDays.length; i++){
            var temps = getMinMaxDayTemp(data, i)
             min_max.push(temps)
         }
+
+        // Grabs the images for the background depending
+        // on the weather conditions
+
         if (data.list[0].weather[0].main == "Rain") {
             $('body').css('background-image', 'url("http://www.gifimili.com/gif/2018/03/pluie-dessin-parapluie.gif")')
         }
@@ -223,13 +270,13 @@
         }
         return output
     }
-    //
 
 
 
 
 
-    // Display Checkboxes
+
+    // Display/Hide Checkboxes
 
     $('#temperature').change(function () {
         $('.temperatureInfo').toggleClass('hideTemp');
