@@ -14,24 +14,27 @@
 <body>
     <div class="container">
         <div class="row text-center">
-            <h1>Simple Simon</h1>
+            <header>
+                <h1>Simple Simon</h1>
+                <h3>Current Score: <span id="scoreDisplay">0</span></h3>
+                <button id="playerButton" class="start btn btn-primary">Start</button>
+                <button id="resetbtn" class="btn btn-primary">Reset</button>
+            </header>
             <div class="centering">
                 <div class="row simon-container">
-                    <div id="0" class="col-sm-6 firstBlock simonBlocks center">
-                    </div>
-                    <div id="1" class="col-sm-6 secondBlock simonBlocks center">
-                    </div>
+                        <div id="0" class="col-sm-5 col-md-6 firstBlock simonBlocks center">
+                        </div>
+                        <div id="1" class="col-sm-5 col-md-6 secondBlock simonBlocks center">
+                        </div>
                 </div>
                 <div class="row simon-container">
-                    <div id="2" class="col-sm-6 thirdBlock simonBlocks center">
+                    <div id="2" class="col-sm-5 col-md-6 thirdBlock simonBlocks center">
                     </div>
-                    <div id="3" class="col-sm-6 fourthBlock simonBlocks center">
+                    <div id="3" class="col-sm-5 col-md-6 fourthBlock simonBlocks center">
                     </div>
+
                 </div>
             </div>
-            <h3>Current Score: <span id="scoreDisplay">0</span></h3>
-            <button id="playerButton" class="start btn btn-primary">Start</button>
-            <button id="resetbtn" class="btn btn-primary">Reset</button>
         </div>
     </div>
 

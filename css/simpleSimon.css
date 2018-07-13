@@ -1,6 +1,24 @@
+body {
+    height: 100%;
+    background: linear-gradient(45deg, cornflowerblue, mediumseagreen),linear-gradient(142deg, lightseagreen, lightsteelblue),linear-gradient(108deg, seagreen, slateblue), no-repeat center center fixed;
+}
+
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px lightcyan;
+}
+
+h3 {
+    text-shadow: 1px 1px black, 2px 2px 5px lightsteelblue;
+}
+
 .firstBlock, .secondBlock, .thirdBlock, .fourthBlock {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 25%;
     margin: 10px;
     box-shadow: 5px 5px 5px black;
     border-radius: 10%;
@@ -48,11 +66,25 @@
 }
 
 .centering {
-    position: absolute;
     border: 7px solid black;
-    left: 323px;
-    top: 181px;
-    width: 482px;
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(to bottom, aliceblue, lightsteelblue);
+    float: none;
+    margin: 0 auto;
+    border-radius: 15%;
+    box-shadow: 0 0 31px black;
+}
+
+.btn {
+    color: black;
+    background: linear-gradient(to top, orangered, palevioletred);
+    box-shadow: 2px 1px 3px black;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 .simon-container {
@@ -61,4 +93,28 @@
 
 .win {
     color: greenyellow;
+}
+
+@media (min-width: 576px) {
+
+    .firstBlock, .secondBlock, .thirdBlock, .fourthBlock {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 10%;
+    }
+
+    .centering {
+        border: 7px solid black;
+        max-width: 482px;
+        min-width: 482px;
+        padding: 0;
+        background: linear-gradient(to bottom, aliceblue, lightsteelblue);
+        float: none;
+        margin: 0 auto;
+        border-radius: 15%;
+        box-shadow: 0 0 31px black;
+    }
+
 }
