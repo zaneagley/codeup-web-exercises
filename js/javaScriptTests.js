@@ -533,22 +533,24 @@
 
 
 //search bar
-    function myFunction() {
-        var input, filter;
-        input = document.getElementsByClassName('myLinks');
-        filter = document.getElementById('myInput').value.toUpperCase();
-// Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < input.length; i++) {
-            var currentElem = input[i];
-            var currentElemChild = input[i].children[0]
-            if (currentElemChild.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                currentElem.style.display = "";
-            } else {
-                currentElem.style.display = "none";
-            }
-        }
-    }
-    document.getElementById('myInput').addEventListener('onkeyup', myFunction);
+//     function myFunction() {
+//         var input, filter;
+//         input = document.getElementsByClassName('myLinks');
+//         filter = document.getElementById('myInput').value.toUpperCase();
+
+// // Loop through all list items, and hide those who don't match the search query
+
+//         for (i = 0; i < input.length; i++) {
+//             var currentElem = input[i];
+//             var currentElemChild = input[i].children[0]
+//             if (currentElemChild.innerHTML.toUpperCase().indexOf(filter) > -1) {
+//                 currentElem.style.display = "";
+//             } else {
+//                 currentElem.style.display = "none";
+//             }
+//         }
+//     }
+//     document.getElementById('myInput').addEventListener('onkeyup', myFunction);
 
 
 
@@ -828,11 +830,22 @@ function cleanPhoneNumbers(phoneNums) {
     }
     */
 
+// JS ES6 very of:
+//     var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//     var evens = [];
+//     for (var i = 0; i < numbers.length; i += 1) {
+//         if (numbers[i] % 2 === 0) {
+//             evens.push(numbers[i]);
+//         }
+//     }
 
+/*let numbers = [1,2,3,4,5,6,7,8,9,10];
 
-
-
-
+let evens = numbers.filter( n => n % 2 === 0);
+// Can also be
+let evens = numbers.filter( (n) => {
+       return n % 2 === 0
+    });*/
 
 
 
