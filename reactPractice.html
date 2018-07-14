@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .heading {
+            color: whitesmoke;
+        }
+
+        #fancy {
+            background-color: #0fb784;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div id="react-container"></div>
+
+
+<script type="text/babel">
+
+    // class Hello extends React.Component {
+    //     render() {
+    //         return (
+    //             <div>
+    //                 <h1>Hello {props.firstName}</h1>
+    //                 <p>Learning React Version {this.props.version}</p>
+    //             </div>
+    //         )
+    //     }
+    // }
+    //
+    // // const HelloStateless = (props) => <h1>Hello</h1>
+    //
+    //
+    // const HelloStateless = ({firstName}) => <h1>Hello {firstName}</h1>;
+
+
+   // <!--ReactDOM.render(-->
+   //     <!--<HelloStateless firstName="Zan" version={16}/>,-->
+   //     <!--document.getElementById('react-container')-->
+   // <!--)-->
+
+    class Checkbox extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                checked: false
+            };
+            this.handleCheck = this.handleCheck.bind(this)
+        }
+
+        handleCheck() {
+            this.setState({
+                checked: !this.state.checked
+            })
+        }
+
+        render() {
+            let msg;
+            if(this.state.checked) {
+                msg = "checked"
+            } else {
+                msg = "not checked"
+            }
+            return (
+                <div>
+                    <input type="checkbox"
+                           onChange={this.handleCheck}
+                           defaultChecked={this.state.checked}/>
+                    <p>This box is {msg}</p>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Checkbox />,
+        document.getElementById('react-container')
+    )
+
+</script>
+
+</body>
+</html>
