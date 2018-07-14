@@ -849,6 +849,191 @@ let evens = numbers.filter( (n) => {
 
 
 
+        const fruits = ["cantaloupe", "orange", "date", "elderberry", "ugli fruit", "pineapple"];
+
+        const customers = [
+            {
+                name: "Fred",
+                age: 58,
+                occupation: "Police Officer",
+                noOfPurchases: 4
+            },
+            {
+                name: "Samantha",
+                age: 54,
+                occupation: "Teacher",
+                noOfPurchases: 18
+            },
+            {
+                name: "Charles",
+                age: 38,
+                occupation: "Librarian",
+                noOfPurchases: 9
+            }
+        ];
+
+        const pets = [
+            {
+                name: 'Bud',
+                age: 2,
+                breed: 'Pug'
+            },
+            {
+                name: 'Gabby',
+                age: 10,
+                breed: 'Retriever'
+            },
+            {
+                name: 'Fred',
+                age: 1,
+                breed: 'Lab'
+            },
+            {
+                name: 'Bowser',
+                age: 2,
+                breed: 'Pug'
+            }
+        ];
+
+        const family = [
+            {
+                name: "Pam",
+                gender: "female",
+                age: 29,
+            },
+            {
+                name: "Amelie",
+                gender: "female",
+                age: 10,
+            },
+            {
+                name: "Justin",
+                gender: "male",
+                age: 32,
+            },
+        ];
+
+        // PROBLEM 1 - create an array of the first letters of each fruit
+
+        const firstFruitLetter = fruits.map(letter => letter.charAt(0));
+
+        // PROBLEM 2 - create array of user objects based on the customers array
+        // of objects (each user object should just have name and age properties)
+
+        const nameAges = customers.map(nameage => {
+            return {name: nameage.name,  age: nameage.age};
+        });
+        // PROBLEM 3 - create an array of civil servant customers (teachers and police officers)
+        // **containing the same properties as the objects on the customers objects
+    let test = [];
+
+        const civilServants =  customers.filter(servant => {
+            if ( servant.occupation === 'Teacher' || 'Police Officer') {
+               test.push(servant.occupation)
+           }
+
+        });
+
+        // PROBLEM 4 - determine the average age of customers
+
+        const averageAge = customers.reduce((person, personage) => {
+         return person + personage.age / 3
+    }, 0);
+        // PROBLEM 5 - create a function makeSuperPet() that takes in the pets array as input and returns a single pet object
+        // with the following shape...
+
+
+
+        function makeSuperPet(pets) {
+          return pets.map(n => {
+            let string = n['name'].join('');
+             return string
+          });
+
+
+        }
+
+    /*
+
+        {
+            name: ALL_PET_NAMES_CONCATENATED_INTO_A_SINGLE_STRING,
+            age: THE_TOTAL_OF_ALL_PET_AGES,
+            breed: THE_FIRST_LETTERS_OF_ALL_PET_BREEDS_CONCATENATATED_INTO_A_SINGLE_STRING
+        }
+
+     */
+
+        // PROBLEM 6 - take in an array of pets and return an array of the length of first names for pugs only
+        // your output for the given input should be [3, 6] for 'Bud' and 'Bowser'
+        const sortPugs = pets.filter(pet => pet.breed === 'Pug');
+        const pugsNameLength = sortPugs.map(pet => pet['name'].length);
+
+    //    console.log(pugsNameLength);
+        // PROBLEM 7 - create a function getFemaleFamilyMembers() that when given the family variable as an argument,
+        // returns an array of female family member names
+        function getFemaleFamilyMembers(family) {
+            let female = family.filter(member => member.gender === 'female');
+            return female.map(n => n.name);
+
+        }
+
+   // console.log(getFemaleFamilyMembers(family));
+        // PROBLEM 8 - create a function makeLongPetString() that when given the variable of pets,
+        // returns a string of all property values with dashes separating each property value
+        function makeLongPetString(pets) {
+            return Object.values(pets)
+        }
+
+        // PROBLEM 9 - create a function that when given an array of first names, returns an array of the same names with a last name of Smith
+
+        // input = ['Sally', 'Fred', 'Steve']
+        // output = ['Sally Smith', 'Fred Smith', 'Steve']
+
+    const arrayOfNums = [1,2,3,4,5,6,7,8,9,10];
+        // PROBLEM 10 - create a function that when given an array of numbers, return the sum of even numbers
+        function evenArrayNums(numbers) {
+            let evens = numbers.filter(n => n% 2 === 0 );
+            return evens.reduce((total, currentVal) => {
+               return total + currentVal
+            }, 0);
+        }
+
+        console.log(evenArrayNums(arrayOfNums));
+        // PROBLEM 11 - create a function that when given an array of numbers, return the sum of all numbers evenly divisible by 10
+
+        // PROBLEM 12 - create a function that when given an array of names, return a string of all the first letters of each name
+
+            function firstLetterName(arr) {
+              let arrayLetters = arr.map(letter => letter.charAt(0));
+                return arrayLetters.join('')
+            }
+        // PROBLEM 13 - create a function that when given an array of values, returns an array of only the truthy values
+
+
+
+        // PROBLEM 14 - create a function that when given an object, returns the property values as an array of elements
+   const person = {
+        name: "Fred",
+            age: 58,
+        occupation: "Police Officer",
+        noOfPurchases: 4
+    };
+
+            function objectToArray(object) {
+               return Object.values(object)
+
+            }
+            console.log(objectToArray(person))
+        // PROBLEM 15 - create a function that when given an object, returns the property values as an array of elements
+
+        // PROBLEM 16 - create a function that when given three arguments: a min num, a max num, an array
+        // of nums will return the array of nums that are only between the min and max values, inclusive
+
+        // PROBLEM 17 - create a function that when given an array of strings, returns an array of objects
+        // with properties for the given string value and the length of the string and the string without vowels (not including y)
+
+
+
 
 
 

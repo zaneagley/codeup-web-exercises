@@ -61,7 +61,7 @@
             if (event.keyCode === 13) {
                 enterBtn()
             }
-        })
+        });
 
         // Grabs the location that was double clicked, moving the marker
         // and cycling through the weather data.
@@ -85,7 +85,7 @@
                 $('html, body').animate({
                     scrollTop: $('#map-canvas').offset().top + 'px'
                 }, 'fast');
-            };
+            }
 
 
 
@@ -123,6 +123,8 @@
                 }
             });
         }
+
+        // Changing the days to show
 
         lat = marker.getPosition().lat();
         lng = marker.getPosition().lng();
