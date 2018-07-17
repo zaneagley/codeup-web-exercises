@@ -13,17 +13,6 @@
 
 
 
-    // $('#playerButton').click(function () {
-    //     if (!gameOver) {
-    //         playerScore++;
-    //         if (playerScore === winningScore) {
-    //             console.log("Game Over.  Player wins!!");
-    //             gameOver = true;
-    //         }
-    //         scoreDisplay.textContent = playerScore;
-    //     }
-    // });
-
     $(".start").click(function () {
         if (gameStart != true) {
             gameStart = true;
@@ -69,35 +58,35 @@
 
     }
 
-        $('.simonBlocks').click(function () {
-            if (gameStart != false) {
-                id = $(this).attr('id');
-                color = $(this).attr('class').split(' ')[1];
-                userSeq.push(id);
-                console.log(id + " " + color);
-                addClassSound(id, color);
-                if (!checkUserSeq()) {
-                    displayError();
-                    userSeq = [];
-                }
-                if (userSeq.length == simonSeq.length && userSeq.length < winningScore) {
-                    console.log(playerScore);
-                    playerScore++;
-                    console.log(playerScore);
-                    $(scoreDisplay).text(playerScore);
-                    userSeq = [];
-                    startSequence();
-                }
-                if (userSeq.length == winningScore) {
-                    playerScore++;
-                    $(scoreDisplay).text(playerScore);
-                    $(scoreDisplay).addClass('win');
-                    alert("You win!");
-                    gameStart = false;
-                    gameOver = true
-                }
+    $('.simonBlocks').click(function () {
+        if (gameStart != false) {
+            id = $(this).attr('id');
+            color = $(this).attr('class').split(' ')[1];
+            userSeq.push(id);
+            console.log(id + " " + color);
+            addClassSound(id, color);
+            if (!checkUserSeq()) {
+                displayError();
+                userSeq = [];
             }
-        });
+            if (userSeq.length == simonSeq.length && userSeq.length < winningScore) {
+                console.log(playerScore);
+                playerScore++;
+                console.log(playerScore);
+                $(scoreDisplay).text(playerScore);
+                userSeq = [];
+                startSequence();
+            }
+            if (userSeq.length == winningScore) {
+                playerScore++;
+                $(scoreDisplay).text(playerScore);
+                $(scoreDisplay).addClass('win');
+                alert("You win!");
+                gameStart = false;
+                gameOver = true
+            }
+        }
+    });
 
 
     function checkUserSeq() {
