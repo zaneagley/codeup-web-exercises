@@ -16,7 +16,7 @@
 
 
     function lastPush(user) {
-        console.log(fetch('https://api.github.com/users/' + user + '/events?access_token=03688546a2096eb955092129707878bbe1911399')
+        console.log(fetch('https://api.github.com/users/' + user + '/events?access_token=')   // Put API token after 'token='
             .then(response => response.json())
             .then(data => console.log(data[0].created_at))
             .catch("Error"))
