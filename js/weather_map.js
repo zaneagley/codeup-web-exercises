@@ -146,6 +146,7 @@
         weatherApp(data)
     });
 
+    console.log($.ajax("http://api.openweathermap.org/data/2.5/forecast?id=4726206&APPID=027a0cfc318b8db92387b938997021b0"))
 
     // Main Function
     // Creates an empty array, cycles through the 40 available

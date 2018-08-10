@@ -1,16 +1,37 @@
 (function () {
     "use strict";
 
-    var playerScore = 0;
-    var winningScore = 5;
+    var difficultySetting = document.querySelector('#difficulty');
     var scoreDisplay = document.querySelector('#scoreDisplay');
     var gameStart = false;
     var gameOver = false;
     var userSeq = [];
     var simonSeq = [];
-    var id, color, level = 0;
+    var winningScore = 9;
+    var id, color, level, playerScore = 0;
     var simonColorsSound = [];  // Future work for adding sounds
 
+
+
+
+
+    difficultySetting.addEventListener("change", function () {
+        switch (difficultySetting.value){
+            case "easy":
+                winningScore = 5;
+                break;
+            case "normal":
+                winningScore = 9;
+                break;
+            case "hard":
+                winningScore = 13;
+                break;
+            case "endless":
+                winningScore = Infinity;
+                break;
+            default:
+        }
+    });
 
 
     $(".start").click(function () {
@@ -28,8 +49,7 @@
             var i = 0;
             var myInterval = setInterval(function () {
                 id = simonSeq[i];
-                color = $("#" + id).attr("class").split(" ")[1];
-                console.log(id + " " + color);
+                color = $("#" + id).attr("class").split(" ")[2];
                 addClassSound(id, color);
                 i++;
                 if (i == simonSeq.length) {
@@ -61,18 +81,15 @@
     $('.simonBlocks').click(function () {
         if (gameStart != false) {
             id = $(this).attr('id');
-            color = $(this).attr('class').split(' ')[1];
+            color = $(this).attr('class').split(' ')[2];
             userSeq.push(id);
-            console.log(id + " " + color);
             addClassSound(id, color);
             if (!checkUserSeq()) {
                 displayError();
                 userSeq = [];
             }
             if (userSeq.length == simonSeq.length && userSeq.length < winningScore) {
-                console.log(playerScore);
                 playerScore++;
-                console.log(playerScore);
                 $(scoreDisplay).text(playerScore);
                 userSeq = [];
                 startSequence();
